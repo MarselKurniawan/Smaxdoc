@@ -1,9 +1,10 @@
 import { Link } from "@tanstack/react-router";
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 
 export interface SidebarItem {
   label: string;
   to?: string;
+  children?: SidebarItem[];
 }
 
 export interface TocItem {
@@ -25,6 +26,7 @@ export function DocsHeader({ activeProduct }: { activeProduct?: "Channelku" | "H
     { label: "Channelku", to: "/docs/channelku/dashboard" },
     { label: "Hotelku", to: "/docs/hotelku/dashboard" },
   ];
+
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/90 backdrop-blur">
       <div className="mx-auto flex h-14 max-w-[1400px] items-center gap-8 px-6">
@@ -52,34 +54,37 @@ export function DocsHeader({ activeProduct }: { activeProduct?: "Channelku" | "H
 }
 
 export function DocsLayout({ product, sidebar, toc, breadcrumb, activeTo, children }: DocsLayoutProps) {
-  return (
+const [openMenus, setOpenMenus] = useState<Record<string, boolean>>(() => {
+  const saved = localStorage.getItem("sidebar-open");
+  return saved ? JSON.parse(saved) : {};
+});
+
+useEffect(() => {
+  localStorage.setItem(
+    "sidebar-open",
+    JSON.stringify(openMenus)
+  );
+}, [openMenus]);
+
+return (  
     <div className="min-h-screen bg-background text-foreground">
       <DocsHeader activeProduct={product} />
       <div className="mx-auto flex max-w-[1400px] gap-8 px-6 py-8">
         {/* Sidebar */}
         <aside className="hidden w-64 shrink-0 lg:block">
+        <div className="sticky top-20 h-[calc(100vh-6rem)] overflow-y-auto pr-2">
           <nav className="sticky top-20 space-y-1 text-sm">
-            {sidebar.map((item) => {
-              const active = item.to === activeTo;
-              const cls =
-                "block cursor-pointer rounded-md px-3 py-2 transition-colors " +
-                (active
-                  ? "bg-[#1d4ed8]/10 text-[#1d4ed8] font-semibold"
-                  : "text-foreground/75 hover:bg-muted");
-              if (item.to) {
-                return (
-                  <Link key={item.label} to={item.to} className={cls}>
-                    {item.label}
-                  </Link>
-                );
-              }
-              return (
-                <div key={item.label} className={cls}>
-                  {item.label}
-                </div>
-              );
-            })}
-          </nav>
+           {sidebar.map((item) => (
+    <SidebarNode
+  key={item.label}
+  item={item}
+  activeTo={activeTo}
+  openMenus={openMenus}
+  setOpenMenus={setOpenMenus}
+/>
+  ))}
+</nav>
+</div>
         </aside>
 
         {/* Main */}
@@ -124,6 +129,81 @@ export function DocsLayout({ product, sidebar, toc, breadcrumb, activeTo, childr
   );
 }
 
+function SidebarNode({
+  item,
+  activeTo,
+  openMenus,
+  setOpenMenus,
+}: {
+  item: SidebarItem;
+  activeTo?: string;
+  openMenus: Record<string, boolean>;
+  setOpenMenus: React.Dispatch<
+    React.SetStateAction<Record<string, boolean>>
+  >;
+}) {
+  const isOpen = openMenus[item.label] ?? false;
+
+  const active = item.to === activeTo;
+
+  const cls =
+    "flex items-center justify-between rounded-md px-3 py-2 transition-colors cursor-pointer " +
+    (active
+      ? "bg-[#1d4ed8]/10 text-[#1d4ed8] font-semibold"
+      : "text-foreground/75 hover:bg-muted");
+
+  if (!item.children) {
+  return (
+    <Link
+      to={item.to!}
+      className={`${cls} transition-all duration-200 hover:translate-x-1`}
+    >
+      {item.label}
+    </Link>
+  );
+}
+
+  return (
+    <div>
+      <button
+        onClick={() =>
+        setOpenMenus((prev) => ({
+        ...prev,
+        [item.label]: !prev[item.label],
+  }))
+}
+        className={cls + " w-full"}
+      >
+        <span>{item.label}</span>
+        <span className={`transition-transform duration-300 ${ 
+        isOpen ? "rotate-90" : ""  }`} >
+        ▶
+       </span>
+       </button>
+
+      <div
+  className={`overflow-hidden transition-all duration-300 ${
+    isOpen
+      ? "max-h-[3000px] opacity-100"
+      : "max-h-0 opacity-0" 
+  }`}
+>
+  <div className="ml-4 mt-1 border-l pl-3 space-y-1">
+    {item.children.map((child) => (
+      <SidebarNode
+  key={child.label}
+  item={child}
+  activeTo={activeTo}
+  openMenus={openMenus}
+  setOpenMenus={setOpenMenus}
+/>
+    ))}
+  </div>
+</div>
+    </div>
+  );
+}
+
 export function Section({
   id,
   title,
@@ -141,12 +221,30 @@ export function Section({
   );
 }
 
-export function Figure({ label }: { label: string }) {
+export function Figure({
+  label,
+  src,
+}: {
+  label: string;
+  src?: string;
+}) {
   return (
-    <div className="my-4 rounded-lg border bg-muted/40 p-8 text-center text-sm text-muted-foreground">
-      <div className="mx-auto flex h-40 max-w-md items-center justify-center rounded-md border border-dashed bg-background text-muted-foreground/70">
-        [ Gambar: {label} ]
-      </div>
+    <div className="my-4 rounded-lg border bg-muted/40 p-4">
+      {src ? (
+        <img
+          src={src}
+          alt={label}
+          className="w-full rounded-lg border"
+        />
+      ) : (
+        <div className="mx-auto flex h-40 max-w-md items-center justify-center rounded-md border border-dashed bg-background text-muted-foreground/70">
+          [ Gambar: {label} ]
+        </div>
+      )}
+
+      <p className="mt-2 text-center text-sm text-muted-foreground">
+        {label}
+      </p>
     </div>
   );
 }

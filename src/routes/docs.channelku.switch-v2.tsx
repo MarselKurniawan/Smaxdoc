@@ -29,7 +29,10 @@ function Page() {
           konsisten di seluruh modul. Fitur inti tetap sama; hanya tata letak, navigasi,
           dan performa yang ditingkatkan.
         </p>
-        <Figure label="Perbandingan tampilan v1 dan v2" />
+        <Figure label="Perbandingan tampilan v1 dan v2"
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1742278811/05._enable_new_version_mpicd4.jpg" />
+        <Figure label="Perbandingan tampilan v1 dan v2"
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1742278084/04._disable_new_version_xsmrj9.jpg" />
       </Section>
 
       <Section id="how-to-switch" title="Cara Beralih ke v2">
@@ -39,7 +42,6 @@ function Page() {
           <li>Konfirmasi peralihan pada dialog yang muncul.</li>
           <li>Sistem akan memuat ulang halaman dengan tampilan v2.</li>
         </ol>
-        <Figure label="Dialog konfirmasi peralihan versi" />
       </Section>
 
       <Section id="back-to-v1" title="Kembali ke v1">

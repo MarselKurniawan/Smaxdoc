@@ -53,11 +53,14 @@ function ChannelkuDashboard() {
         </p>
         <ol className="ml-6 list-decimal space-y-2">
           <li>Klik tombol edit akses cepat dengan ikon pensil.</li>
-          <Figure label="Tombol edit akses cepat" />
+          <Figure label="Tombol edit akses cepat"
+          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1762327419/00.dashboard-2.png" />
           <li>Pilih fitur yang diinginkan, lalu klik tombol <strong>Simpan Perubahan</strong>.</li>
-          <Figure label="Dialog pemilihan fitur akses cepat" />
+          <Figure label="Dialog pemilihan fitur akses cepat" 
+          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1762407628/00.dashboard-3.png" />
           <li>Sekarang panel akses cepat akan tampil di pojok kanan atas.</li>
-          <Figure label="Panel akses cepat pada dashboard" />
+          <Figure label="Panel akses cepat pada dashboard" 
+          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1762333901/00.dashboard-10.png" />
         </ol>
       </Section>
 
@@ -67,7 +70,8 @@ function ChannelkuDashboard() {
           pembaruan channel. Anda dapat melihat detail pengumuman dengan mengklik{" "}
           <strong>Lihat Semua Pengumuman</strong> atau <strong>Lihat Detail</strong>.
         </p>
-        <Figure label="Kartu pengumuman pada dashboard" />
+        <Figure label="Kartu pengumuman pada dashboard"
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1762325654/00.dashboard-1.png" />
       </Section>
 
       <Section id="revenue-summary" title="Ringkasan Pendapatan">
@@ -80,7 +84,8 @@ function ChannelkuDashboard() {
           Pada bagian atas, Anda dapat memilih <strong>mata uang</strong> yang diinginkan
           (misalnya IDR atau USD) melalui menu dropdown.
         </p>
-        <Figure label="Ringkasan pendapatan dan pemilih mata uang" />
+        <Figure label="Ringkasan pendapatan dan pemilih mata uang"
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1762331481/00.dashboard-4.png" />
         <ul className="ml-6 list-disc space-y-2">
           <li><strong>Pendapatan Hari Ini</strong> — total pendapatan yang dihasilkan hari ini beserta persentase perubahan dibandingkan hari kemarin.</li>
           <li><strong>Month-to-Date (MTD)</strong> — akumulasi pendapatan dari hari pertama bulan berjalan sampai hari ini, dibandingkan dengan MTD bulan sebelumnya.</li>
@@ -90,7 +95,8 @@ function ChannelkuDashboard() {
 
       <Section id="booking-overview" title="Ikhtisar Reservasi">
         <p>Ringkasan aktivitas reservasi hari ini untuk memantau okupansi dan pergerakan tamu secara real-time.</p>
-        <Figure label="Kartu ikhtisar reservasi" />
+        <Figure label="Kartu ikhtisar reservasi"
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1762331959/00.dashboard-5.png" />
         <ul className="ml-6 list-disc space-y-2">
           <li><strong>Reservasi Hari Ini</strong> — total reservasi baru yang dibuat hari ini.</li>
           <li><strong>Kamar Tersedia Hari Ini</strong> — jumlah kamar yang tersedia untuk dijual atau dialokasikan.</li>
@@ -101,7 +107,8 @@ function ChannelkuDashboard() {
 
       <Section id="recent-bookings" title="Reservasi Terbaru">
         <p>Menampilkan <strong>10 reservasi terbaru</strong> yang tercatat di sistem.</p>
-        <Figure label="Tabel reservasi terbaru" />
+        <Figure label="Tabel reservasi terbaru"
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1762333159/00.dashboard-7.png" />
         <ul className="ml-6 list-disc space-y-2">
           <li><strong>Sumber Reservasi</strong> — platform atau channel asal reservasi.</li>
           <li><strong>Nama Tamu</strong> — nama tamu yang terkait dengan reservasi.</li>
@@ -116,7 +123,8 @@ function ChannelkuDashboard() {
 
       <Section id="booking-engine-preview" title="Pratinjau Booking Engine">
         <p>Tampilan visual Booking Engine properti Anda sebagaimana yang dilihat calon tamu.</p>
-        <Figure label="Pratinjau tampilan booking engine" />
+        <Figure label="Pratinjau tampilan booking engine"
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1762737268/booking-engine-preview.png" />
         <ul className="ml-6 list-disc space-y-2">
           <li><strong>Nama Properti</strong> — nama properti yang terkait dengan Booking Engine.</li>
           <li><strong>Gambar Pratinjau</strong> — pratinjau visual Booking Engine.</li>
@@ -127,13 +135,15 @@ function ChannelkuDashboard() {
 
       <Section id="error-status" title="Status Error">
         <p>Daftar <strong>error sistem</strong> yang saat ini terdeteksi pada platform.</p>
-        <Figure label="Daftar status error" />
+        <Figure label="Daftar status error"
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1762407221/00.dashboard-8.png" />
         <p>Setiap entri mencakup jenis error dan jumlah kemunculan; daftar dapat diperluas atau diciutkan.</p>
       </Section>
 
       <Section id="channel-status" title="Status Channel">
         <p>Gambaran rinci tentang status <strong>koneksi dan pemetaan</strong> setiap channel.</p>
-        <Figure label="Daftar status channel" />
+        <Figure label="Daftar status channel"
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1762333612/00.dashboard-9.png" />
         <ul className="ml-6 list-disc space-y-2">
           <li><strong>Connected</strong> — channel terhubung dan aktif bertukar data.</li>
           <li><strong>Disconnected</strong> — koneksi channel sedang tidak aktif atau terputus.</li>

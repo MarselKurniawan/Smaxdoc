@@ -5,89 +5,165 @@ import { hotelkuSidebar } from "@/lib/docs-nav";
 export const Route = createFileRoute("/docs/hotelku/dashboard")({
   head: () => ({
     meta: [
-      { title: "Dashboard — Hotelku | SinergiMax" },
-      { name: "description", content: "Panduan halaman Dashboard Hotelku pada SinergiMax." },
+      { title: "Dasbor — Hotelku | SinergiMax" },
+      { name: "description", content: "Ringkasan kinerja operasional dan reservasi properti untuk memantau kinerja harian." },
     ],
   }),
-  component: HotelkuDashboard,
+  component: Page,
 });
 
 const toc: TocItem[] = [
+  { id: "overview", label: "Ikhtisar" },
   { id: "reservation-summary", label: "Ringkasan Reservasi" },
-  { id: "revenue-performance", label: "Performa Pendapatan" },
-  { id: "key-performance-metrics", label: "Indikator Performa Utama" },
-  { id: "reservation-issue-summary", label: "Ringkasan Masalah Reservasi" },
+  { id: "revenue-performance", label: "Kinerja Pendapatan" },
+  { id: "key-performance", label: "Metrik Kinerja Utama" },
+  { id: "reservation-issue", label: "Ringkasan Masalah Reservasi" },
   { id: "occupancy-rate", label: "Tingkat Okupansi" },
   { id: "inventory-statistic", label: "Statistik Inventaris" },
 ];
 
-function HotelkuDashboard() {
+function Page() {
   return (
-    <DocsLayout
-      product="Hotelku"
-      sidebar={hotelkuSidebar}
-      toc={toc}
-      breadcrumb="Dashboard"
-      activeTo="/docs/hotelku/dashboard"
-    >
-      <h1 className="text-4xl font-bold tracking-[-0.04em]">Ikhtisar</h1>
-      <p className="mt-4 text-[15px] leading-7 text-foreground/85">
-        <strong>Dashboard</strong> menyediakan ringkasan performa operasional dan reservasi
-        untuk properti Anda — referensi cepat untuk memantau performa harian dan
-        mengidentifikasi tren penting sekilas.
+    <DocsLayout product="Hotelku" sidebar={hotelkuSidebar} toc={toc} breadcrumb="Dasbor" activeTo="/docs/hotelku/dashboard">
+      <h1 className="text-4xl font-bold tracking-[-0.04em]">Dasbor</h1>
+      <p className="mt-4">
+        <strong>Dasbor</strong> menyediakan ringkasan kinerja operasional dan reservasi untuk properti Anda. 
+        Halaman ini berfungsi sebagai referensi cepat untuk memantau kinerja harian dan mengidentifikasi tren penting sekilas.
       </p>
+      <Figure label=""
+      src="https://res.cloudinary.com/dayo5hqig/image/upload/v1764314462/dashboard-page.png" />
 
-      <Figure label="Tampilan utama halaman Dashboard Hotelku" />
-
+      {/* ==================== RESERVATION SUMMARY ==================== */}
       <Section id="reservation-summary" title="Ringkasan Reservasi">
-        <Figure label="Kartu ringkasan reservasi" />
-        <p>Hitungan real-time atas aktivitas tamu utama untuk hari berjalan.</p>
-        <ul className="ml-6 list-disc space-y-2">
-          <li><strong>Kedatangan</strong> — jumlah tamu yang telah check-in dibandingkan total kedatangan hari ini.</li>
-          <li><strong>Keberangkatan</strong> — jumlah tamu yang telah check-out dibandingkan total keberangkatan hari ini.</li>
-          <li><strong>Reservasi</strong> — jumlah reservasi baru yang dikonfirmasi hari ini.</li>
-          <li><strong>In-House</strong> — total kamar yang saat ini ditempati tamu.</li>
+        <p>Bagian ini menyediakan hitungan waktu nyata dari aktivitas tamu utama untuk hari ini.</p>
+
+        <ul className="ml-6 list-disc space-y-1">
+          <li>
+            <strong>Kedatangan:</strong> Menunjukkan jumlah tamu yang sudah check-in dibandingkan dengan total yang dijadwalkan untuk tiba hari ini. 
+            <span className="block text-sm text-muted-foreground">Misalnya, 0/2 berarti 0 tamu telah check-in dari 2 kedatangan yang diharapkan.</span>
+          </li>
+          <li>
+            <strong>Keberangkatan:</strong> Menunjukkan jumlah tamu yang sudah check-out dibandingkan dengan total yang dijadwalkan untuk berangkat hari ini.
+          </li>
+          <li>
+            <strong>Pemesanan:</strong> Menampilkan jumlah reservasi baru yang dikonfirmasi hari ini.
+          </li>
+          <li>
+            <strong>Di Dalam Hotel:</strong> Menunjukkan jumlah total kamar yang saat ini ditempati oleh tamu.
+          </li>
         </ul>
+        <Figure label=""
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1764314575/reservation-summary.png" />
       </Section>
 
-      <Section id="revenue-performance" title="Performa Pendapatan">
-        <Figure label="Kartu performa pendapatan" />
-        <ul className="ml-6 list-disc space-y-2">
-          <li><strong>Total Revenue</strong> — total pendapatan dari penjualan kamar.</li>
-          <li><strong>Average Daily Rate (ADR)</strong> — tarif rata-rata per kamar yang terisi.</li>
+      {/* ==================== REVENUE PERFORMANCE ==================== */}
+      <Section id="revenue-performance" title="Kinerja Pendapatan">
+        <p>
+          Bagian ini menyoroti indikator pendapatan terkait kamar yang penting untuk membantu Anda memahami seberapa baik 
+          kinerja keuangan properti.
+        </p>
+
+        <ul className="ml-6 list-disc space-y-1">
+          <li>
+            <strong>Total Pendapatan:</strong> Menunjukkan total pendapatan yang dihasilkan dari penjualan kamar.
+          </li>
+          <li>
+            <strong>Tarif Harian Rata-rata (ADR):</strong> Menunjukkan tarif kamar rata-rata yang diperoleh per kamar yang ditempati.
+          </li>
         </ul>
+        <Figure label=""
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1764314622/revenue-performance.png" />
       </Section>
 
-      <Section id="key-performance-metrics" title="Indikator Performa Utama">
-        <Figure label="Kartu indikator performa utama" />
-        <ul className="ml-6 list-disc space-y-2">
-          <li><strong>Booking Lead Time</strong> — rata-rata hari antara tanggal reservasi dan kedatangan.</li>
-          <li><strong>Average Length of Stay (ALOS)</strong> — rata-rata jumlah malam tamu menginap.</li>
+      {/* ==================== KEY PERFORMANCE ==================== */}
+      <Section id="key-performance" title="Metrik Kinerja Utama">
+        <p>
+          Indikator ini membantu menganalisis pola pemesanan dan perilaku tamu, mendukung peramalan dan perencanaan operasional.
+        </p>
+
+        <ul className="ml-6 list-disc space-y-1">
+          <li>
+            <strong>Waktu Tunggu Pemesanan:</strong> Rata-rata jumlah hari antara tanggal pemesanan dan tanggal kedatangan tamu. 
+            <span className="block text-sm text-muted-foreground">Waktu tunggu yang lebih panjang biasanya menunjukkan permintaan ke depan yang lebih kuat.</span>
+          </li>
+          <li>
+            <strong>Rata-rata Lama Menginap (ALOS):</strong> Rata-rata jumlah malam tamu menginap di properti. 
+            <span className="block text-sm text-muted-foreground">
+              Ini membantu menentukan pola menginap tamu, mengoptimalkan alokasi kamar, dan meningkatkan perencanaan pendapatan.
+            </span>
+          </li>
         </ul>
+        <Figure label=""
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1764314661/key-performance-metric.png" />
       </Section>
 
-      <Section id="reservation-issue-summary" title="Ringkasan Masalah Reservasi">
-        <Figure label="Kartu ringkasan masalah reservasi" />
-        <ul className="ml-6 list-disc space-y-2">
-          <li><strong>Void</strong> — reservasi yang secara permanen dibatalkan.</li>
-          <li><strong>Cancelled</strong> — reservasi yang dibatalkan resmi.</li>
-          <li><strong>No Show</strong> — tamu yang tidak hadir tanpa pembatalan.</li>
+      {/* ==================== RESERVATION ISSUE ==================== */}
+      <Section id="reservation-issue" title="Ringkasan Masalah Reservasi">
+        <p>
+          Bagian ini melacak hasil reservasi yang tidak menghasilkan pendapatan, membantu menilai kehilangan pendapatan 
+          dan mengoptimalkan penggunaan inventaris.
+        </p>
+
+        <ul className="ml-6 list-disc space-y-1">
+          <li>
+            <strong>Batal:</strong> Jumlah reservasi yang secara permanen dibatalkan atau dihapus dari sistem.
+          </li>
+          <li>
+            <strong>Dibatalkan:</strong> Jumlah reservasi yang secara resmi dibatalkan oleh tamu atau properti.
+          </li>
+          <li>
+            <strong>Tidak Hadir:</strong> Jumlah tamu yang gagal tiba untuk pemesanan mereka yang dikonfirmasi tanpa pembatalan sebelumnya.
+          </li>
         </ul>
+        <Figure label=""
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1764314665/reservation-issue.png" />
       </Section>
 
+      {/* ==================== OCCUPANCY RATE ==================== */}
       <Section id="occupancy-rate" title="Tingkat Okupansi">
-        <Figure label="Diagram tingkat okupansi" />
-        <p>Ditampilkan dengan gauge melingkar untuk memberikan gambaran visual tingkat okupansi properti secara jelas.</p>
+        <p>
+          Bagian <strong>Tingkat Okupansi</strong> ditampilkan menggunakan <strong>pengukur melingkar</strong> untuk memberikan 
+          gambaran visual yang jelas tentang berapa banyak kamar yang saat ini terisi.
+        </p>
+
+        <ul className="ml-6 list-disc space-y-1">
+          <li>
+            Persentase yang lebih tinggi berarti sebagian besar kamar terisi dan properti berkinerja baik dalam hal penjualan kamar.
+          </li>
+          <li>
+            Metrik ini membantu tim front office dan manajemen untuk menilai tingkat okupansi saat ini dengan cepat dan membuat 
+            keputusan yang tepat terkait <strong>staf</strong>, <strong>inventaris</strong>, <strong>upselling</strong>, dan 
+            <strong>penyesuaian harga</strong>.
+          </li>
+        </ul>
+        <Figure label=""
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1764314689/occupancy-rate.png" />
       </Section>
 
+      {/* ==================== INVENTORY STATISTIC ==================== */}
       <Section id="inventory-statistic" title="Statistik Inventaris">
-        <Figure label="Diagram statistik inventaris" />
-        <ul className="ml-6 list-disc space-y-2">
-          <li><strong>Available Rooms</strong> — kamar siap dijual.</li>
-          <li><strong>Sold Rooms</strong> — kamar yang ditempati tamu berbayar.</li>
-          <li><strong>Blocked Rooms</strong> — kamar yang sementara dikeluarkan dari inventaris.</li>
-          <li><strong>Complimentary Rooms</strong> — kamar yang ditempati tanpa biaya.</li>
+        <p>
+          Bagan ini memberikan rincian terperinci tentang status inventaris kamar Anda saat ini:
+        </p>
+
+        <ul className="ml-6 list-disc space-y-1">
+          <li>
+            <strong>Kamar Tersedia:</strong> Jumlah kamar yang siap untuk dijual.
+          </li>
+          <li>
+            <strong>Kamar Terjual:</strong> Jumlah kamar yang saat ini ditempati oleh tamu yang membayar.
+          </li>
+          <li>
+            <strong>Kamar Diblokir:</strong> Kamar yang untuk sementara dihapus dari inventaris (misalnya, untuk pemeliharaan, 
+            pembersihan, atau penahanan grup).
+          </li>
+          <li>
+            <strong>Kamar Komplementer:</strong> Kamar yang terisi tetapi disediakan tanpa biaya (misalnya, untuk staf, pemilik, 
+            alokasi promosi).
+          </li>
         </ul>
+        <Figure label=""
+        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1764314713/inventory-statistic.png" />
       </Section>
     </DocsLayout>
   );

@@ -11,15 +11,88 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as DocsChannelkuAccountRouteImport } from './routes/docs.channelku.account'
+import { Route as DocsChannelkuAgodaRouteImport } from './routes/docs.channelku.agoda'
+import { Route as DocsChannelkuAirbnbRouteImport } from './routes/docs.channelku.airbnb'
+import { Route as DocsChannelkuAirhostRouteImport } from './routes/docs.channelku.airhost'
+import { Route as DocsChannelkuAlaricRouteImport } from './routes/docs.channelku.alaric'
+import { Route as DocsChannelkuAzanaVoyageRouteImport } from './routes/docs.channelku.azana-voyage'
 import { Route as DocsChannelkuBackOfficeRouteImport } from './routes/docs.channelku.back-office'
+import { Route as DocsChannelkuBillingRouteImport } from './routes/docs.channelku.billing'
+import { Route as DocsChannelkuBookingComRouteImport } from './routes/docs.channelku.booking-com'
+import { Route as DocsChannelkuBookingListRouteImport } from './routes/docs.channelku.booking-list'
+import { Route as DocsChannelkuBookingPolicyRouteImport } from './routes/docs.channelku.booking-policy'
+import { Route as DocsChannelkuBookingcomReviewRouteImport } from './routes/docs.channelku.bookingcom-review'
+import { Route as DocsChannelkuBookingcomSetupRouteImport } from './routes/docs.channelku.bookingcom-setup'
+import { Route as DocsChannelkuBookinginaRouteImport } from './routes/docs.channelku.bookingina'
+import { Route as DocsChannelkuBooknpayRouteImport } from './routes/docs.channelku.booknpay'
 import { Route as DocsChannelkuChannelManagerRouteImport } from './routes/docs.channelku.channel-manager'
+import { Route as DocsChannelkuConnectRequestRouteImport } from './routes/docs.channelku.connect-request'
+import { Route as DocsChannelkuConnectedChannelRouteImport } from './routes/docs.channelku.connected-channel'
+import { Route as DocsChannelkuControlPanelRouteImport } from './routes/docs.channelku.control-panel'
+import { Route as DocsChannelkuCreateReservationRouteImport } from './routes/docs.channelku.create-reservation'
+import { Route as DocsChannelkuCtripRouteImport } from './routes/docs.channelku.ctrip'
 import { Route as DocsChannelkuDashboardRouteImport } from './routes/docs.channelku.dashboard'
+import { Route as DocsChannelkuDetailsRouteImport } from './routes/docs.channelku.details'
+import { Route as DocsChannelkuDidaTravelRouteImport } from './routes/docs.channelku.dida-travel'
+import { Route as DocsChannelkuDotwRouteImport } from './routes/docs.channelku.dotw'
+import { Route as DocsChannelkuDynamicMinNightRouteImport } from './routes/docs.channelku.dynamic-min-night'
+import { Route as DocsChannelkuDynamicPricingRouteImport } from './routes/docs.channelku.dynamic-pricing'
+import { Route as DocsChannelkuEmailAutomationRouteImport } from './routes/docs.channelku.email-automation'
+import { Route as DocsChannelkuExpediaRouteImport } from './routes/docs.channelku.expedia'
+import { Route as DocsChannelkuFullSynchroAutoRouteImport } from './routes/docs.channelku.full-synchro-auto'
+import { Route as DocsChannelkuGoibiboRouteImport } from './routes/docs.channelku.goibibo'
+import { Route as DocsChannelkuGoogleHotelRouteImport } from './routes/docs.channelku.google-hotel'
 import { Route as DocsChannelkuGuestCrmRouteImport } from './routes/docs.channelku.guest-crm'
+import { Route as DocsChannelkuGuestDatabaseRouteImport } from './routes/docs.channelku.guest-database'
+import { Route as DocsChannelkuGuestproRouteImport } from './routes/docs.channelku.guestpro'
+import { Route as DocsChannelkuGuestproIbeRouteImport } from './routes/docs.channelku.guestpro-ibe'
+import { Route as DocsChannelkuGustodianRouteImport } from './routes/docs.channelku.gustodian'
+import { Route as DocsChannelkuHostelworldRouteImport } from './routes/docs.channelku.hostelworld'
+import { Route as DocsChannelkuHotelbedsRouteImport } from './routes/docs.channelku.hotelbeds'
+import { Route as DocsChannelkuHotelmuRouteImport } from './routes/docs.channelku.hotelmu'
+import { Route as DocsChannelkuHoteripRouteImport } from './routes/docs.channelku.hoterip'
+import { Route as DocsChannelkuIcalendarRouteImport } from './routes/docs.channelku.icalendar'
+import { Route as DocsChannelkuIkyuRouteImport } from './routes/docs.channelku.ikyu'
+import { Route as DocsChannelkuInternalMappingRouteImport } from './routes/docs.channelku.internal-mapping'
+import { Route as DocsChannelkuJournalRouteImport } from './routes/docs.channelku.journal'
+import { Route as DocsChannelkuKliknbookRouteImport } from './routes/docs.channelku.kliknbook'
+import { Route as DocsChannelkuLogsRouteImport } from './routes/docs.channelku.logs'
+import { Route as DocsChannelkuMappingOtaIbeRouteImport } from './routes/docs.channelku.mapping-ota-ibe'
+import { Route as DocsChannelkuMappingPmsRouteImport } from './routes/docs.channelku.mapping-pms'
+import { Route as DocsChannelkuMarriotHomesRouteImport } from './routes/docs.channelku.marriot-homes'
+import { Route as DocsChannelkuMgBedbankRouteImport } from './routes/docs.channelku.mg-bedbank'
+import { Route as DocsChannelkuMisterAladinRouteImport } from './routes/docs.channelku.mister-aladin'
+import { Route as DocsChannelkuMonthlyDealsRouteImport } from './routes/docs.channelku.monthly-deals'
+import { Route as DocsChannelkuOmniHotelierRouteImport } from './routes/docs.channelku.omni-hotelier'
 import { Route as DocsChannelkuOtaContentRouteImport } from './routes/docs.channelku.ota-content'
+import { Route as DocsChannelkuPactindoRouteImport } from './routes/docs.channelku.pactindo'
+import { Route as DocsChannelkuPelicanRouteImport } from './routes/docs.channelku.pelican'
+import { Route as DocsChannelkuPertamaRouteImport } from './routes/docs.channelku.pertama'
 import { Route as DocsChannelkuPmsLogsRouteImport } from './routes/docs.channelku.pms-logs'
+import { Route as DocsChannelkuPowerproRouteImport } from './routes/docs.channelku.powerpro'
+import { Route as DocsChannelkuPricelabsRouteImport } from './routes/docs.channelku.pricelabs'
+import { Route as DocsChannelkuPromotionsOtaRouteImport } from './routes/docs.channelku.promotions-ota'
+import { Route as DocsChannelkuPropertyRouteImport } from './routes/docs.channelku.property'
+import { Route as DocsChannelkuRakutenRouteImport } from './routes/docs.channelku.rakuten'
+import { Route as DocsChannelkuRateMultiplierRouteImport } from './routes/docs.channelku.rate-multiplier'
+import { Route as DocsChannelkuRealtaRouteImport } from './routes/docs.channelku.realta'
+import { Route as DocsChannelkuReportRouteImport } from './routes/docs.channelku.report'
 import { Route as DocsChannelkuReservationsRouteImport } from './routes/docs.channelku.reservations'
+import { Route as DocsChannelkuRoibackRouteImport } from './routes/docs.channelku.roiback'
+import { Route as DocsChannelkuRoomAlocationRouteImport } from './routes/docs.channelku.room-alocation'
+import { Route as DocsChannelkuRoomsRouteImport } from './routes/docs.channelku.rooms'
 import { Route as DocsChannelkuSettingsRouteImport } from './routes/docs.channelku.settings'
+import { Route as DocsChannelkuSkyhotelRouteImport } from './routes/docs.channelku.skyhotel'
+import { Route as DocsChannelkuSubusersRouteImport } from './routes/docs.channelku.subusers'
 import { Route as DocsChannelkuSwitchV2RouteImport } from './routes/docs.channelku.switch-v2'
+import { Route as DocsChannelkuTboHolidaysRouteImport } from './routes/docs.channelku.tbo-holidays'
+import { Route as DocsChannelkuTiketComRouteImport } from './routes/docs.channelku.tiket-com'
+import { Route as DocsChannelkuTravelokaRouteImport } from './routes/docs.channelku.traveloka'
+import { Route as DocsChannelkuTriplabookRouteImport } from './routes/docs.channelku.triplabook'
+import { Route as DocsChannelkuTwospacesRouteImport } from './routes/docs.channelku.twospaces'
+import { Route as DocsChannelkuVhpRouteImport } from './routes/docs.channelku.vhp'
+import { Route as DocsChannelkuVillafinderRouteImport } from './routes/docs.channelku.villafinder'
+import { Route as DocsChannelkuYearlyDealsRouteImport } from './routes/docs.channelku.yearly-deals'
 import { Route as DocsHotelkuAccountAndExtrasRouteImport } from './routes/docs.hotelku.account-and-extras'
 import { Route as DocsHotelkuAccountingAppsRouteImport } from './routes/docs.hotelku.accounting-apps'
 import { Route as DocsHotelkuAgentSettingRouteImport } from './routes/docs.hotelku.agent-setting'
@@ -42,9 +115,79 @@ const DocsChannelkuAccountRoute = DocsChannelkuAccountRouteImport.update({
   path: '/docs/channelku/account',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DocsChannelkuAgodaRoute = DocsChannelkuAgodaRouteImport.update({
+  id: '/docs/channelku/agoda',
+  path: '/docs/channelku/agoda',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuAirbnbRoute = DocsChannelkuAirbnbRouteImport.update({
+  id: '/docs/channelku/airbnb',
+  path: '/docs/channelku/airbnb',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuAirhostRoute = DocsChannelkuAirhostRouteImport.update({
+  id: '/docs/channelku/airhost',
+  path: '/docs/channelku/airhost',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuAlaricRoute = DocsChannelkuAlaricRouteImport.update({
+  id: '/docs/channelku/alaric',
+  path: '/docs/channelku/alaric',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuAzanaVoyageRoute =
+  DocsChannelkuAzanaVoyageRouteImport.update({
+    id: '/docs/channelku/azana-voyage',
+    path: '/docs/channelku/azana-voyage',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const DocsChannelkuBackOfficeRoute = DocsChannelkuBackOfficeRouteImport.update({
   id: '/docs/channelku/back-office',
   path: '/docs/channelku/back-office',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuBillingRoute = DocsChannelkuBillingRouteImport.update({
+  id: '/docs/channelku/billing',
+  path: '/docs/channelku/billing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuBookingComRoute = DocsChannelkuBookingComRouteImport.update({
+  id: '/docs/channelku/booking-com',
+  path: '/docs/channelku/booking-com',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuBookingListRoute =
+  DocsChannelkuBookingListRouteImport.update({
+    id: '/docs/channelku/booking-list',
+    path: '/docs/channelku/booking-list',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuBookingPolicyRoute =
+  DocsChannelkuBookingPolicyRouteImport.update({
+    id: '/docs/channelku/booking-policy',
+    path: '/docs/channelku/booking-policy',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuBookingcomReviewRoute =
+  DocsChannelkuBookingcomReviewRouteImport.update({
+    id: '/docs/channelku/bookingcom-review',
+    path: '/docs/channelku/bookingcom-review',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuBookingcomSetupRoute =
+  DocsChannelkuBookingcomSetupRouteImport.update({
+    id: '/docs/channelku/bookingcom-setup',
+    path: '/docs/channelku/bookingcom-setup',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuBookinginaRoute = DocsChannelkuBookinginaRouteImport.update({
+  id: '/docs/channelku/bookingina',
+  path: '/docs/channelku/bookingina',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuBooknpayRoute = DocsChannelkuBooknpayRouteImport.update({
+  id: '/docs/channelku/booknpay',
+  path: '/docs/channelku/booknpay',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DocsChannelkuChannelManagerRoute =
@@ -53,24 +196,279 @@ const DocsChannelkuChannelManagerRoute =
     path: '/docs/channelku/channel-manager',
     getParentRoute: () => rootRouteImport,
   } as any)
+const DocsChannelkuConnectRequestRoute =
+  DocsChannelkuConnectRequestRouteImport.update({
+    id: '/docs/channelku/connect-request',
+    path: '/docs/channelku/connect-request',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuConnectedChannelRoute =
+  DocsChannelkuConnectedChannelRouteImport.update({
+    id: '/docs/channelku/connected-channel',
+    path: '/docs/channelku/connected-channel',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuControlPanelRoute =
+  DocsChannelkuControlPanelRouteImport.update({
+    id: '/docs/channelku/control-panel',
+    path: '/docs/channelku/control-panel',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuCreateReservationRoute =
+  DocsChannelkuCreateReservationRouteImport.update({
+    id: '/docs/channelku/create-reservation',
+    path: '/docs/channelku/create-reservation',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuCtripRoute = DocsChannelkuCtripRouteImport.update({
+  id: '/docs/channelku/ctrip',
+  path: '/docs/channelku/ctrip',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DocsChannelkuDashboardRoute = DocsChannelkuDashboardRouteImport.update({
   id: '/docs/channelku/dashboard',
   path: '/docs/channelku/dashboard',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DocsChannelkuDetailsRoute = DocsChannelkuDetailsRouteImport.update({
+  id: '/docs/channelku/details',
+  path: '/docs/channelku/details',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuDidaTravelRoute = DocsChannelkuDidaTravelRouteImport.update({
+  id: '/docs/channelku/dida-travel',
+  path: '/docs/channelku/dida-travel',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuDotwRoute = DocsChannelkuDotwRouteImport.update({
+  id: '/docs/channelku/dotw',
+  path: '/docs/channelku/dotw',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuDynamicMinNightRoute =
+  DocsChannelkuDynamicMinNightRouteImport.update({
+    id: '/docs/channelku/dynamic-min-night',
+    path: '/docs/channelku/dynamic-min-night',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuDynamicPricingRoute =
+  DocsChannelkuDynamicPricingRouteImport.update({
+    id: '/docs/channelku/dynamic-pricing',
+    path: '/docs/channelku/dynamic-pricing',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuEmailAutomationRoute =
+  DocsChannelkuEmailAutomationRouteImport.update({
+    id: '/docs/channelku/email-automation',
+    path: '/docs/channelku/email-automation',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuExpediaRoute = DocsChannelkuExpediaRouteImport.update({
+  id: '/docs/channelku/expedia',
+  path: '/docs/channelku/expedia',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuFullSynchroAutoRoute =
+  DocsChannelkuFullSynchroAutoRouteImport.update({
+    id: '/docs/channelku/full-synchro-auto',
+    path: '/docs/channelku/full-synchro-auto',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuGoibiboRoute = DocsChannelkuGoibiboRouteImport.update({
+  id: '/docs/channelku/goibibo',
+  path: '/docs/channelku/goibibo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuGoogleHotelRoute =
+  DocsChannelkuGoogleHotelRouteImport.update({
+    id: '/docs/channelku/google-hotel',
+    path: '/docs/channelku/google-hotel',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const DocsChannelkuGuestCrmRoute = DocsChannelkuGuestCrmRouteImport.update({
   id: '/docs/channelku/guest-crm',
   path: '/docs/channelku/guest-crm',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DocsChannelkuGuestDatabaseRoute =
+  DocsChannelkuGuestDatabaseRouteImport.update({
+    id: '/docs/channelku/guest-database',
+    path: '/docs/channelku/guest-database',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuGuestproRoute = DocsChannelkuGuestproRouteImport.update({
+  id: '/docs/channelku/guestpro',
+  path: '/docs/channelku/guestpro',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuGuestproIbeRoute =
+  DocsChannelkuGuestproIbeRouteImport.update({
+    id: '/docs/channelku/guestpro-ibe',
+    path: '/docs/channelku/guestpro-ibe',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuGustodianRoute = DocsChannelkuGustodianRouteImport.update({
+  id: '/docs/channelku/gustodian',
+  path: '/docs/channelku/gustodian',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuHostelworldRoute =
+  DocsChannelkuHostelworldRouteImport.update({
+    id: '/docs/channelku/hostelworld',
+    path: '/docs/channelku/hostelworld',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuHotelbedsRoute = DocsChannelkuHotelbedsRouteImport.update({
+  id: '/docs/channelku/hotelbeds',
+  path: '/docs/channelku/hotelbeds',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuHotelmuRoute = DocsChannelkuHotelmuRouteImport.update({
+  id: '/docs/channelku/hotelmu',
+  path: '/docs/channelku/hotelmu',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuHoteripRoute = DocsChannelkuHoteripRouteImport.update({
+  id: '/docs/channelku/hoterip',
+  path: '/docs/channelku/hoterip',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuIcalendarRoute = DocsChannelkuIcalendarRouteImport.update({
+  id: '/docs/channelku/icalendar',
+  path: '/docs/channelku/icalendar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuIkyuRoute = DocsChannelkuIkyuRouteImport.update({
+  id: '/docs/channelku/ikyu',
+  path: '/docs/channelku/ikyu',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuInternalMappingRoute =
+  DocsChannelkuInternalMappingRouteImport.update({
+    id: '/docs/channelku/internal-mapping',
+    path: '/docs/channelku/internal-mapping',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuJournalRoute = DocsChannelkuJournalRouteImport.update({
+  id: '/docs/channelku/journal',
+  path: '/docs/channelku/journal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuKliknbookRoute = DocsChannelkuKliknbookRouteImport.update({
+  id: '/docs/channelku/kliknbook',
+  path: '/docs/channelku/kliknbook',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuLogsRoute = DocsChannelkuLogsRouteImport.update({
+  id: '/docs/channelku/logs',
+  path: '/docs/channelku/logs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuMappingOtaIbeRoute =
+  DocsChannelkuMappingOtaIbeRouteImport.update({
+    id: '/docs/channelku/mapping-ota-ibe',
+    path: '/docs/channelku/mapping-ota-ibe',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuMappingPmsRoute = DocsChannelkuMappingPmsRouteImport.update({
+  id: '/docs/channelku/mapping-pms',
+  path: '/docs/channelku/mapping-pms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuMarriotHomesRoute =
+  DocsChannelkuMarriotHomesRouteImport.update({
+    id: '/docs/channelku/marriot-homes',
+    path: '/docs/channelku/marriot-homes',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuMgBedbankRoute = DocsChannelkuMgBedbankRouteImport.update({
+  id: '/docs/channelku/mg-bedbank',
+  path: '/docs/channelku/mg-bedbank',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuMisterAladinRoute =
+  DocsChannelkuMisterAladinRouteImport.update({
+    id: '/docs/channelku/mister-aladin',
+    path: '/docs/channelku/mister-aladin',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuMonthlyDealsRoute =
+  DocsChannelkuMonthlyDealsRouteImport.update({
+    id: '/docs/channelku/monthly-deals',
+    path: '/docs/channelku/monthly-deals',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuOmniHotelierRoute =
+  DocsChannelkuOmniHotelierRouteImport.update({
+    id: '/docs/channelku/omni-hotelier',
+    path: '/docs/channelku/omni-hotelier',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const DocsChannelkuOtaContentRoute = DocsChannelkuOtaContentRouteImport.update({
   id: '/docs/channelku/ota-content',
   path: '/docs/channelku/ota-content',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DocsChannelkuPactindoRoute = DocsChannelkuPactindoRouteImport.update({
+  id: '/docs/channelku/pactindo',
+  path: '/docs/channelku/pactindo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuPelicanRoute = DocsChannelkuPelicanRouteImport.update({
+  id: '/docs/channelku/pelican',
+  path: '/docs/channelku/pelican',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuPertamaRoute = DocsChannelkuPertamaRouteImport.update({
+  id: '/docs/channelku/pertama',
+  path: '/docs/channelku/pertama',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DocsChannelkuPmsLogsRoute = DocsChannelkuPmsLogsRouteImport.update({
   id: '/docs/channelku/pms-logs',
   path: '/docs/channelku/pms-logs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuPowerproRoute = DocsChannelkuPowerproRouteImport.update({
+  id: '/docs/channelku/powerpro',
+  path: '/docs/channelku/powerpro',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuPricelabsRoute = DocsChannelkuPricelabsRouteImport.update({
+  id: '/docs/channelku/pricelabs',
+  path: '/docs/channelku/pricelabs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuPromotionsOtaRoute =
+  DocsChannelkuPromotionsOtaRouteImport.update({
+    id: '/docs/channelku/promotions-ota',
+    path: '/docs/channelku/promotions-ota',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuPropertyRoute = DocsChannelkuPropertyRouteImport.update({
+  id: '/docs/channelku/property',
+  path: '/docs/channelku/property',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuRakutenRoute = DocsChannelkuRakutenRouteImport.update({
+  id: '/docs/channelku/rakuten',
+  path: '/docs/channelku/rakuten',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuRateMultiplierRoute =
+  DocsChannelkuRateMultiplierRouteImport.update({
+    id: '/docs/channelku/rate-multiplier',
+    path: '/docs/channelku/rate-multiplier',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuRealtaRoute = DocsChannelkuRealtaRouteImport.update({
+  id: '/docs/channelku/realta',
+  path: '/docs/channelku/realta',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuReportRoute = DocsChannelkuReportRouteImport.update({
+  id: '/docs/channelku/report',
+  path: '/docs/channelku/report',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DocsChannelkuReservationsRoute =
@@ -79,9 +477,35 @@ const DocsChannelkuReservationsRoute =
     path: '/docs/channelku/reservations',
     getParentRoute: () => rootRouteImport,
   } as any)
+const DocsChannelkuRoibackRoute = DocsChannelkuRoibackRouteImport.update({
+  id: '/docs/channelku/roiback',
+  path: '/docs/channelku/roiback',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuRoomAlocationRoute =
+  DocsChannelkuRoomAlocationRouteImport.update({
+    id: '/docs/channelku/room-alocation',
+    path: '/docs/channelku/room-alocation',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuRoomsRoute = DocsChannelkuRoomsRouteImport.update({
+  id: '/docs/channelku/rooms',
+  path: '/docs/channelku/rooms',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DocsChannelkuSettingsRoute = DocsChannelkuSettingsRouteImport.update({
   id: '/docs/channelku/settings',
   path: '/docs/channelku/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuSkyhotelRoute = DocsChannelkuSkyhotelRouteImport.update({
+  id: '/docs/channelku/skyhotel',
+  path: '/docs/channelku/skyhotel',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuSubusersRoute = DocsChannelkuSubusersRouteImport.update({
+  id: '/docs/channelku/subusers',
+  path: '/docs/channelku/subusers',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DocsChannelkuSwitchV2Route = DocsChannelkuSwitchV2RouteImport.update({
@@ -89,6 +513,49 @@ const DocsChannelkuSwitchV2Route = DocsChannelkuSwitchV2RouteImport.update({
   path: '/docs/channelku/switch-v2',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DocsChannelkuTboHolidaysRoute =
+  DocsChannelkuTboHolidaysRouteImport.update({
+    id: '/docs/channelku/tbo-holidays',
+    path: '/docs/channelku/tbo-holidays',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuTiketComRoute = DocsChannelkuTiketComRouteImport.update({
+  id: '/docs/channelku/tiket-com',
+  path: '/docs/channelku/tiket-com',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuTravelokaRoute = DocsChannelkuTravelokaRouteImport.update({
+  id: '/docs/channelku/traveloka',
+  path: '/docs/channelku/traveloka',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuTriplabookRoute = DocsChannelkuTriplabookRouteImport.update({
+  id: '/docs/channelku/triplabook',
+  path: '/docs/channelku/triplabook',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuTwospacesRoute = DocsChannelkuTwospacesRouteImport.update({
+  id: '/docs/channelku/twospaces',
+  path: '/docs/channelku/twospaces',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuVhpRoute = DocsChannelkuVhpRouteImport.update({
+  id: '/docs/channelku/vhp',
+  path: '/docs/channelku/vhp',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsChannelkuVillafinderRoute =
+  DocsChannelkuVillafinderRouteImport.update({
+    id: '/docs/channelku/villafinder',
+    path: '/docs/channelku/villafinder',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocsChannelkuYearlyDealsRoute =
+  DocsChannelkuYearlyDealsRouteImport.update({
+    id: '/docs/channelku/yearly-deals',
+    path: '/docs/channelku/yearly-deals',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const DocsHotelkuAccountAndExtrasRoute =
   DocsHotelkuAccountAndExtrasRouteImport.update({
     id: '/docs/hotelku/account-and-extras',
@@ -151,15 +618,88 @@ const DocsHotelkuStockInventoryRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/docs/channelku/account': typeof DocsChannelkuAccountRoute
+  '/docs/channelku/agoda': typeof DocsChannelkuAgodaRoute
+  '/docs/channelku/airbnb': typeof DocsChannelkuAirbnbRoute
+  '/docs/channelku/airhost': typeof DocsChannelkuAirhostRoute
+  '/docs/channelku/alaric': typeof DocsChannelkuAlaricRoute
+  '/docs/channelku/azana-voyage': typeof DocsChannelkuAzanaVoyageRoute
   '/docs/channelku/back-office': typeof DocsChannelkuBackOfficeRoute
+  '/docs/channelku/billing': typeof DocsChannelkuBillingRoute
+  '/docs/channelku/booking-com': typeof DocsChannelkuBookingComRoute
+  '/docs/channelku/booking-list': typeof DocsChannelkuBookingListRoute
+  '/docs/channelku/booking-policy': typeof DocsChannelkuBookingPolicyRoute
+  '/docs/channelku/bookingcom-review': typeof DocsChannelkuBookingcomReviewRoute
+  '/docs/channelku/bookingcom-setup': typeof DocsChannelkuBookingcomSetupRoute
+  '/docs/channelku/bookingina': typeof DocsChannelkuBookinginaRoute
+  '/docs/channelku/booknpay': typeof DocsChannelkuBooknpayRoute
   '/docs/channelku/channel-manager': typeof DocsChannelkuChannelManagerRoute
+  '/docs/channelku/connect-request': typeof DocsChannelkuConnectRequestRoute
+  '/docs/channelku/connected-channel': typeof DocsChannelkuConnectedChannelRoute
+  '/docs/channelku/control-panel': typeof DocsChannelkuControlPanelRoute
+  '/docs/channelku/create-reservation': typeof DocsChannelkuCreateReservationRoute
+  '/docs/channelku/ctrip': typeof DocsChannelkuCtripRoute
   '/docs/channelku/dashboard': typeof DocsChannelkuDashboardRoute
+  '/docs/channelku/details': typeof DocsChannelkuDetailsRoute
+  '/docs/channelku/dida-travel': typeof DocsChannelkuDidaTravelRoute
+  '/docs/channelku/dotw': typeof DocsChannelkuDotwRoute
+  '/docs/channelku/dynamic-min-night': typeof DocsChannelkuDynamicMinNightRoute
+  '/docs/channelku/dynamic-pricing': typeof DocsChannelkuDynamicPricingRoute
+  '/docs/channelku/email-automation': typeof DocsChannelkuEmailAutomationRoute
+  '/docs/channelku/expedia': typeof DocsChannelkuExpediaRoute
+  '/docs/channelku/full-synchro-auto': typeof DocsChannelkuFullSynchroAutoRoute
+  '/docs/channelku/goibibo': typeof DocsChannelkuGoibiboRoute
+  '/docs/channelku/google-hotel': typeof DocsChannelkuGoogleHotelRoute
   '/docs/channelku/guest-crm': typeof DocsChannelkuGuestCrmRoute
+  '/docs/channelku/guest-database': typeof DocsChannelkuGuestDatabaseRoute
+  '/docs/channelku/guestpro': typeof DocsChannelkuGuestproRoute
+  '/docs/channelku/guestpro-ibe': typeof DocsChannelkuGuestproIbeRoute
+  '/docs/channelku/gustodian': typeof DocsChannelkuGustodianRoute
+  '/docs/channelku/hostelworld': typeof DocsChannelkuHostelworldRoute
+  '/docs/channelku/hotelbeds': typeof DocsChannelkuHotelbedsRoute
+  '/docs/channelku/hotelmu': typeof DocsChannelkuHotelmuRoute
+  '/docs/channelku/hoterip': typeof DocsChannelkuHoteripRoute
+  '/docs/channelku/icalendar': typeof DocsChannelkuIcalendarRoute
+  '/docs/channelku/ikyu': typeof DocsChannelkuIkyuRoute
+  '/docs/channelku/internal-mapping': typeof DocsChannelkuInternalMappingRoute
+  '/docs/channelku/journal': typeof DocsChannelkuJournalRoute
+  '/docs/channelku/kliknbook': typeof DocsChannelkuKliknbookRoute
+  '/docs/channelku/logs': typeof DocsChannelkuLogsRoute
+  '/docs/channelku/mapping-ota-ibe': typeof DocsChannelkuMappingOtaIbeRoute
+  '/docs/channelku/mapping-pms': typeof DocsChannelkuMappingPmsRoute
+  '/docs/channelku/marriot-homes': typeof DocsChannelkuMarriotHomesRoute
+  '/docs/channelku/mg-bedbank': typeof DocsChannelkuMgBedbankRoute
+  '/docs/channelku/mister-aladin': typeof DocsChannelkuMisterAladinRoute
+  '/docs/channelku/monthly-deals': typeof DocsChannelkuMonthlyDealsRoute
+  '/docs/channelku/omni-hotelier': typeof DocsChannelkuOmniHotelierRoute
   '/docs/channelku/ota-content': typeof DocsChannelkuOtaContentRoute
+  '/docs/channelku/pactindo': typeof DocsChannelkuPactindoRoute
+  '/docs/channelku/pelican': typeof DocsChannelkuPelicanRoute
+  '/docs/channelku/pertama': typeof DocsChannelkuPertamaRoute
   '/docs/channelku/pms-logs': typeof DocsChannelkuPmsLogsRoute
+  '/docs/channelku/powerpro': typeof DocsChannelkuPowerproRoute
+  '/docs/channelku/pricelabs': typeof DocsChannelkuPricelabsRoute
+  '/docs/channelku/promotions-ota': typeof DocsChannelkuPromotionsOtaRoute
+  '/docs/channelku/property': typeof DocsChannelkuPropertyRoute
+  '/docs/channelku/rakuten': typeof DocsChannelkuRakutenRoute
+  '/docs/channelku/rate-multiplier': typeof DocsChannelkuRateMultiplierRoute
+  '/docs/channelku/realta': typeof DocsChannelkuRealtaRoute
+  '/docs/channelku/report': typeof DocsChannelkuReportRoute
   '/docs/channelku/reservations': typeof DocsChannelkuReservationsRoute
+  '/docs/channelku/roiback': typeof DocsChannelkuRoibackRoute
+  '/docs/channelku/room-alocation': typeof DocsChannelkuRoomAlocationRoute
+  '/docs/channelku/rooms': typeof DocsChannelkuRoomsRoute
   '/docs/channelku/settings': typeof DocsChannelkuSettingsRoute
+  '/docs/channelku/skyhotel': typeof DocsChannelkuSkyhotelRoute
+  '/docs/channelku/subusers': typeof DocsChannelkuSubusersRoute
   '/docs/channelku/switch-v2': typeof DocsChannelkuSwitchV2Route
+  '/docs/channelku/tbo-holidays': typeof DocsChannelkuTboHolidaysRoute
+  '/docs/channelku/tiket-com': typeof DocsChannelkuTiketComRoute
+  '/docs/channelku/traveloka': typeof DocsChannelkuTravelokaRoute
+  '/docs/channelku/triplabook': typeof DocsChannelkuTriplabookRoute
+  '/docs/channelku/twospaces': typeof DocsChannelkuTwospacesRoute
+  '/docs/channelku/vhp': typeof DocsChannelkuVhpRoute
+  '/docs/channelku/villafinder': typeof DocsChannelkuVillafinderRoute
+  '/docs/channelku/yearly-deals': typeof DocsChannelkuYearlyDealsRoute
   '/docs/hotelku/account-and-extras': typeof DocsHotelkuAccountAndExtrasRoute
   '/docs/hotelku/accounting-apps': typeof DocsHotelkuAccountingAppsRoute
   '/docs/hotelku/agent-setting': typeof DocsHotelkuAgentSettingRoute
@@ -175,15 +715,88 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/docs/channelku/account': typeof DocsChannelkuAccountRoute
+  '/docs/channelku/agoda': typeof DocsChannelkuAgodaRoute
+  '/docs/channelku/airbnb': typeof DocsChannelkuAirbnbRoute
+  '/docs/channelku/airhost': typeof DocsChannelkuAirhostRoute
+  '/docs/channelku/alaric': typeof DocsChannelkuAlaricRoute
+  '/docs/channelku/azana-voyage': typeof DocsChannelkuAzanaVoyageRoute
   '/docs/channelku/back-office': typeof DocsChannelkuBackOfficeRoute
+  '/docs/channelku/billing': typeof DocsChannelkuBillingRoute
+  '/docs/channelku/booking-com': typeof DocsChannelkuBookingComRoute
+  '/docs/channelku/booking-list': typeof DocsChannelkuBookingListRoute
+  '/docs/channelku/booking-policy': typeof DocsChannelkuBookingPolicyRoute
+  '/docs/channelku/bookingcom-review': typeof DocsChannelkuBookingcomReviewRoute
+  '/docs/channelku/bookingcom-setup': typeof DocsChannelkuBookingcomSetupRoute
+  '/docs/channelku/bookingina': typeof DocsChannelkuBookinginaRoute
+  '/docs/channelku/booknpay': typeof DocsChannelkuBooknpayRoute
   '/docs/channelku/channel-manager': typeof DocsChannelkuChannelManagerRoute
+  '/docs/channelku/connect-request': typeof DocsChannelkuConnectRequestRoute
+  '/docs/channelku/connected-channel': typeof DocsChannelkuConnectedChannelRoute
+  '/docs/channelku/control-panel': typeof DocsChannelkuControlPanelRoute
+  '/docs/channelku/create-reservation': typeof DocsChannelkuCreateReservationRoute
+  '/docs/channelku/ctrip': typeof DocsChannelkuCtripRoute
   '/docs/channelku/dashboard': typeof DocsChannelkuDashboardRoute
+  '/docs/channelku/details': typeof DocsChannelkuDetailsRoute
+  '/docs/channelku/dida-travel': typeof DocsChannelkuDidaTravelRoute
+  '/docs/channelku/dotw': typeof DocsChannelkuDotwRoute
+  '/docs/channelku/dynamic-min-night': typeof DocsChannelkuDynamicMinNightRoute
+  '/docs/channelku/dynamic-pricing': typeof DocsChannelkuDynamicPricingRoute
+  '/docs/channelku/email-automation': typeof DocsChannelkuEmailAutomationRoute
+  '/docs/channelku/expedia': typeof DocsChannelkuExpediaRoute
+  '/docs/channelku/full-synchro-auto': typeof DocsChannelkuFullSynchroAutoRoute
+  '/docs/channelku/goibibo': typeof DocsChannelkuGoibiboRoute
+  '/docs/channelku/google-hotel': typeof DocsChannelkuGoogleHotelRoute
   '/docs/channelku/guest-crm': typeof DocsChannelkuGuestCrmRoute
+  '/docs/channelku/guest-database': typeof DocsChannelkuGuestDatabaseRoute
+  '/docs/channelku/guestpro': typeof DocsChannelkuGuestproRoute
+  '/docs/channelku/guestpro-ibe': typeof DocsChannelkuGuestproIbeRoute
+  '/docs/channelku/gustodian': typeof DocsChannelkuGustodianRoute
+  '/docs/channelku/hostelworld': typeof DocsChannelkuHostelworldRoute
+  '/docs/channelku/hotelbeds': typeof DocsChannelkuHotelbedsRoute
+  '/docs/channelku/hotelmu': typeof DocsChannelkuHotelmuRoute
+  '/docs/channelku/hoterip': typeof DocsChannelkuHoteripRoute
+  '/docs/channelku/icalendar': typeof DocsChannelkuIcalendarRoute
+  '/docs/channelku/ikyu': typeof DocsChannelkuIkyuRoute
+  '/docs/channelku/internal-mapping': typeof DocsChannelkuInternalMappingRoute
+  '/docs/channelku/journal': typeof DocsChannelkuJournalRoute
+  '/docs/channelku/kliknbook': typeof DocsChannelkuKliknbookRoute
+  '/docs/channelku/logs': typeof DocsChannelkuLogsRoute
+  '/docs/channelku/mapping-ota-ibe': typeof DocsChannelkuMappingOtaIbeRoute
+  '/docs/channelku/mapping-pms': typeof DocsChannelkuMappingPmsRoute
+  '/docs/channelku/marriot-homes': typeof DocsChannelkuMarriotHomesRoute
+  '/docs/channelku/mg-bedbank': typeof DocsChannelkuMgBedbankRoute
+  '/docs/channelku/mister-aladin': typeof DocsChannelkuMisterAladinRoute
+  '/docs/channelku/monthly-deals': typeof DocsChannelkuMonthlyDealsRoute
+  '/docs/channelku/omni-hotelier': typeof DocsChannelkuOmniHotelierRoute
   '/docs/channelku/ota-content': typeof DocsChannelkuOtaContentRoute
+  '/docs/channelku/pactindo': typeof DocsChannelkuPactindoRoute
+  '/docs/channelku/pelican': typeof DocsChannelkuPelicanRoute
+  '/docs/channelku/pertama': typeof DocsChannelkuPertamaRoute
   '/docs/channelku/pms-logs': typeof DocsChannelkuPmsLogsRoute
+  '/docs/channelku/powerpro': typeof DocsChannelkuPowerproRoute
+  '/docs/channelku/pricelabs': typeof DocsChannelkuPricelabsRoute
+  '/docs/channelku/promotions-ota': typeof DocsChannelkuPromotionsOtaRoute
+  '/docs/channelku/property': typeof DocsChannelkuPropertyRoute
+  '/docs/channelku/rakuten': typeof DocsChannelkuRakutenRoute
+  '/docs/channelku/rate-multiplier': typeof DocsChannelkuRateMultiplierRoute
+  '/docs/channelku/realta': typeof DocsChannelkuRealtaRoute
+  '/docs/channelku/report': typeof DocsChannelkuReportRoute
   '/docs/channelku/reservations': typeof DocsChannelkuReservationsRoute
+  '/docs/channelku/roiback': typeof DocsChannelkuRoibackRoute
+  '/docs/channelku/room-alocation': typeof DocsChannelkuRoomAlocationRoute
+  '/docs/channelku/rooms': typeof DocsChannelkuRoomsRoute
   '/docs/channelku/settings': typeof DocsChannelkuSettingsRoute
+  '/docs/channelku/skyhotel': typeof DocsChannelkuSkyhotelRoute
+  '/docs/channelku/subusers': typeof DocsChannelkuSubusersRoute
   '/docs/channelku/switch-v2': typeof DocsChannelkuSwitchV2Route
+  '/docs/channelku/tbo-holidays': typeof DocsChannelkuTboHolidaysRoute
+  '/docs/channelku/tiket-com': typeof DocsChannelkuTiketComRoute
+  '/docs/channelku/traveloka': typeof DocsChannelkuTravelokaRoute
+  '/docs/channelku/triplabook': typeof DocsChannelkuTriplabookRoute
+  '/docs/channelku/twospaces': typeof DocsChannelkuTwospacesRoute
+  '/docs/channelku/vhp': typeof DocsChannelkuVhpRoute
+  '/docs/channelku/villafinder': typeof DocsChannelkuVillafinderRoute
+  '/docs/channelku/yearly-deals': typeof DocsChannelkuYearlyDealsRoute
   '/docs/hotelku/account-and-extras': typeof DocsHotelkuAccountAndExtrasRoute
   '/docs/hotelku/accounting-apps': typeof DocsHotelkuAccountingAppsRoute
   '/docs/hotelku/agent-setting': typeof DocsHotelkuAgentSettingRoute
@@ -200,15 +813,88 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/docs/channelku/account': typeof DocsChannelkuAccountRoute
+  '/docs/channelku/agoda': typeof DocsChannelkuAgodaRoute
+  '/docs/channelku/airbnb': typeof DocsChannelkuAirbnbRoute
+  '/docs/channelku/airhost': typeof DocsChannelkuAirhostRoute
+  '/docs/channelku/alaric': typeof DocsChannelkuAlaricRoute
+  '/docs/channelku/azana-voyage': typeof DocsChannelkuAzanaVoyageRoute
   '/docs/channelku/back-office': typeof DocsChannelkuBackOfficeRoute
+  '/docs/channelku/billing': typeof DocsChannelkuBillingRoute
+  '/docs/channelku/booking-com': typeof DocsChannelkuBookingComRoute
+  '/docs/channelku/booking-list': typeof DocsChannelkuBookingListRoute
+  '/docs/channelku/booking-policy': typeof DocsChannelkuBookingPolicyRoute
+  '/docs/channelku/bookingcom-review': typeof DocsChannelkuBookingcomReviewRoute
+  '/docs/channelku/bookingcom-setup': typeof DocsChannelkuBookingcomSetupRoute
+  '/docs/channelku/bookingina': typeof DocsChannelkuBookinginaRoute
+  '/docs/channelku/booknpay': typeof DocsChannelkuBooknpayRoute
   '/docs/channelku/channel-manager': typeof DocsChannelkuChannelManagerRoute
+  '/docs/channelku/connect-request': typeof DocsChannelkuConnectRequestRoute
+  '/docs/channelku/connected-channel': typeof DocsChannelkuConnectedChannelRoute
+  '/docs/channelku/control-panel': typeof DocsChannelkuControlPanelRoute
+  '/docs/channelku/create-reservation': typeof DocsChannelkuCreateReservationRoute
+  '/docs/channelku/ctrip': typeof DocsChannelkuCtripRoute
   '/docs/channelku/dashboard': typeof DocsChannelkuDashboardRoute
+  '/docs/channelku/details': typeof DocsChannelkuDetailsRoute
+  '/docs/channelku/dida-travel': typeof DocsChannelkuDidaTravelRoute
+  '/docs/channelku/dotw': typeof DocsChannelkuDotwRoute
+  '/docs/channelku/dynamic-min-night': typeof DocsChannelkuDynamicMinNightRoute
+  '/docs/channelku/dynamic-pricing': typeof DocsChannelkuDynamicPricingRoute
+  '/docs/channelku/email-automation': typeof DocsChannelkuEmailAutomationRoute
+  '/docs/channelku/expedia': typeof DocsChannelkuExpediaRoute
+  '/docs/channelku/full-synchro-auto': typeof DocsChannelkuFullSynchroAutoRoute
+  '/docs/channelku/goibibo': typeof DocsChannelkuGoibiboRoute
+  '/docs/channelku/google-hotel': typeof DocsChannelkuGoogleHotelRoute
   '/docs/channelku/guest-crm': typeof DocsChannelkuGuestCrmRoute
+  '/docs/channelku/guest-database': typeof DocsChannelkuGuestDatabaseRoute
+  '/docs/channelku/guestpro': typeof DocsChannelkuGuestproRoute
+  '/docs/channelku/guestpro-ibe': typeof DocsChannelkuGuestproIbeRoute
+  '/docs/channelku/gustodian': typeof DocsChannelkuGustodianRoute
+  '/docs/channelku/hostelworld': typeof DocsChannelkuHostelworldRoute
+  '/docs/channelku/hotelbeds': typeof DocsChannelkuHotelbedsRoute
+  '/docs/channelku/hotelmu': typeof DocsChannelkuHotelmuRoute
+  '/docs/channelku/hoterip': typeof DocsChannelkuHoteripRoute
+  '/docs/channelku/icalendar': typeof DocsChannelkuIcalendarRoute
+  '/docs/channelku/ikyu': typeof DocsChannelkuIkyuRoute
+  '/docs/channelku/internal-mapping': typeof DocsChannelkuInternalMappingRoute
+  '/docs/channelku/journal': typeof DocsChannelkuJournalRoute
+  '/docs/channelku/kliknbook': typeof DocsChannelkuKliknbookRoute
+  '/docs/channelku/logs': typeof DocsChannelkuLogsRoute
+  '/docs/channelku/mapping-ota-ibe': typeof DocsChannelkuMappingOtaIbeRoute
+  '/docs/channelku/mapping-pms': typeof DocsChannelkuMappingPmsRoute
+  '/docs/channelku/marriot-homes': typeof DocsChannelkuMarriotHomesRoute
+  '/docs/channelku/mg-bedbank': typeof DocsChannelkuMgBedbankRoute
+  '/docs/channelku/mister-aladin': typeof DocsChannelkuMisterAladinRoute
+  '/docs/channelku/monthly-deals': typeof DocsChannelkuMonthlyDealsRoute
+  '/docs/channelku/omni-hotelier': typeof DocsChannelkuOmniHotelierRoute
   '/docs/channelku/ota-content': typeof DocsChannelkuOtaContentRoute
+  '/docs/channelku/pactindo': typeof DocsChannelkuPactindoRoute
+  '/docs/channelku/pelican': typeof DocsChannelkuPelicanRoute
+  '/docs/channelku/pertama': typeof DocsChannelkuPertamaRoute
   '/docs/channelku/pms-logs': typeof DocsChannelkuPmsLogsRoute
+  '/docs/channelku/powerpro': typeof DocsChannelkuPowerproRoute
+  '/docs/channelku/pricelabs': typeof DocsChannelkuPricelabsRoute
+  '/docs/channelku/promotions-ota': typeof DocsChannelkuPromotionsOtaRoute
+  '/docs/channelku/property': typeof DocsChannelkuPropertyRoute
+  '/docs/channelku/rakuten': typeof DocsChannelkuRakutenRoute
+  '/docs/channelku/rate-multiplier': typeof DocsChannelkuRateMultiplierRoute
+  '/docs/channelku/realta': typeof DocsChannelkuRealtaRoute
+  '/docs/channelku/report': typeof DocsChannelkuReportRoute
   '/docs/channelku/reservations': typeof DocsChannelkuReservationsRoute
+  '/docs/channelku/roiback': typeof DocsChannelkuRoibackRoute
+  '/docs/channelku/room-alocation': typeof DocsChannelkuRoomAlocationRoute
+  '/docs/channelku/rooms': typeof DocsChannelkuRoomsRoute
   '/docs/channelku/settings': typeof DocsChannelkuSettingsRoute
+  '/docs/channelku/skyhotel': typeof DocsChannelkuSkyhotelRoute
+  '/docs/channelku/subusers': typeof DocsChannelkuSubusersRoute
   '/docs/channelku/switch-v2': typeof DocsChannelkuSwitchV2Route
+  '/docs/channelku/tbo-holidays': typeof DocsChannelkuTboHolidaysRoute
+  '/docs/channelku/tiket-com': typeof DocsChannelkuTiketComRoute
+  '/docs/channelku/traveloka': typeof DocsChannelkuTravelokaRoute
+  '/docs/channelku/triplabook': typeof DocsChannelkuTriplabookRoute
+  '/docs/channelku/twospaces': typeof DocsChannelkuTwospacesRoute
+  '/docs/channelku/vhp': typeof DocsChannelkuVhpRoute
+  '/docs/channelku/villafinder': typeof DocsChannelkuVillafinderRoute
+  '/docs/channelku/yearly-deals': typeof DocsChannelkuYearlyDealsRoute
   '/docs/hotelku/account-and-extras': typeof DocsHotelkuAccountAndExtrasRoute
   '/docs/hotelku/accounting-apps': typeof DocsHotelkuAccountingAppsRoute
   '/docs/hotelku/agent-setting': typeof DocsHotelkuAgentSettingRoute
@@ -226,15 +912,88 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/docs/channelku/account'
+    | '/docs/channelku/agoda'
+    | '/docs/channelku/airbnb'
+    | '/docs/channelku/airhost'
+    | '/docs/channelku/alaric'
+    | '/docs/channelku/azana-voyage'
     | '/docs/channelku/back-office'
+    | '/docs/channelku/billing'
+    | '/docs/channelku/booking-com'
+    | '/docs/channelku/booking-list'
+    | '/docs/channelku/booking-policy'
+    | '/docs/channelku/bookingcom-review'
+    | '/docs/channelku/bookingcom-setup'
+    | '/docs/channelku/bookingina'
+    | '/docs/channelku/booknpay'
     | '/docs/channelku/channel-manager'
+    | '/docs/channelku/connect-request'
+    | '/docs/channelku/connected-channel'
+    | '/docs/channelku/control-panel'
+    | '/docs/channelku/create-reservation'
+    | '/docs/channelku/ctrip'
     | '/docs/channelku/dashboard'
+    | '/docs/channelku/details'
+    | '/docs/channelku/dida-travel'
+    | '/docs/channelku/dotw'
+    | '/docs/channelku/dynamic-min-night'
+    | '/docs/channelku/dynamic-pricing'
+    | '/docs/channelku/email-automation'
+    | '/docs/channelku/expedia'
+    | '/docs/channelku/full-synchro-auto'
+    | '/docs/channelku/goibibo'
+    | '/docs/channelku/google-hotel'
     | '/docs/channelku/guest-crm'
+    | '/docs/channelku/guest-database'
+    | '/docs/channelku/guestpro'
+    | '/docs/channelku/guestpro-ibe'
+    | '/docs/channelku/gustodian'
+    | '/docs/channelku/hostelworld'
+    | '/docs/channelku/hotelbeds'
+    | '/docs/channelku/hotelmu'
+    | '/docs/channelku/hoterip'
+    | '/docs/channelku/icalendar'
+    | '/docs/channelku/ikyu'
+    | '/docs/channelku/internal-mapping'
+    | '/docs/channelku/journal'
+    | '/docs/channelku/kliknbook'
+    | '/docs/channelku/logs'
+    | '/docs/channelku/mapping-ota-ibe'
+    | '/docs/channelku/mapping-pms'
+    | '/docs/channelku/marriot-homes'
+    | '/docs/channelku/mg-bedbank'
+    | '/docs/channelku/mister-aladin'
+    | '/docs/channelku/monthly-deals'
+    | '/docs/channelku/omni-hotelier'
     | '/docs/channelku/ota-content'
+    | '/docs/channelku/pactindo'
+    | '/docs/channelku/pelican'
+    | '/docs/channelku/pertama'
     | '/docs/channelku/pms-logs'
+    | '/docs/channelku/powerpro'
+    | '/docs/channelku/pricelabs'
+    | '/docs/channelku/promotions-ota'
+    | '/docs/channelku/property'
+    | '/docs/channelku/rakuten'
+    | '/docs/channelku/rate-multiplier'
+    | '/docs/channelku/realta'
+    | '/docs/channelku/report'
     | '/docs/channelku/reservations'
+    | '/docs/channelku/roiback'
+    | '/docs/channelku/room-alocation'
+    | '/docs/channelku/rooms'
     | '/docs/channelku/settings'
+    | '/docs/channelku/skyhotel'
+    | '/docs/channelku/subusers'
     | '/docs/channelku/switch-v2'
+    | '/docs/channelku/tbo-holidays'
+    | '/docs/channelku/tiket-com'
+    | '/docs/channelku/traveloka'
+    | '/docs/channelku/triplabook'
+    | '/docs/channelku/twospaces'
+    | '/docs/channelku/vhp'
+    | '/docs/channelku/villafinder'
+    | '/docs/channelku/yearly-deals'
     | '/docs/hotelku/account-and-extras'
     | '/docs/hotelku/accounting-apps'
     | '/docs/hotelku/agent-setting'
@@ -250,15 +1009,88 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/docs/channelku/account'
+    | '/docs/channelku/agoda'
+    | '/docs/channelku/airbnb'
+    | '/docs/channelku/airhost'
+    | '/docs/channelku/alaric'
+    | '/docs/channelku/azana-voyage'
     | '/docs/channelku/back-office'
+    | '/docs/channelku/billing'
+    | '/docs/channelku/booking-com'
+    | '/docs/channelku/booking-list'
+    | '/docs/channelku/booking-policy'
+    | '/docs/channelku/bookingcom-review'
+    | '/docs/channelku/bookingcom-setup'
+    | '/docs/channelku/bookingina'
+    | '/docs/channelku/booknpay'
     | '/docs/channelku/channel-manager'
+    | '/docs/channelku/connect-request'
+    | '/docs/channelku/connected-channel'
+    | '/docs/channelku/control-panel'
+    | '/docs/channelku/create-reservation'
+    | '/docs/channelku/ctrip'
     | '/docs/channelku/dashboard'
+    | '/docs/channelku/details'
+    | '/docs/channelku/dida-travel'
+    | '/docs/channelku/dotw'
+    | '/docs/channelku/dynamic-min-night'
+    | '/docs/channelku/dynamic-pricing'
+    | '/docs/channelku/email-automation'
+    | '/docs/channelku/expedia'
+    | '/docs/channelku/full-synchro-auto'
+    | '/docs/channelku/goibibo'
+    | '/docs/channelku/google-hotel'
     | '/docs/channelku/guest-crm'
+    | '/docs/channelku/guest-database'
+    | '/docs/channelku/guestpro'
+    | '/docs/channelku/guestpro-ibe'
+    | '/docs/channelku/gustodian'
+    | '/docs/channelku/hostelworld'
+    | '/docs/channelku/hotelbeds'
+    | '/docs/channelku/hotelmu'
+    | '/docs/channelku/hoterip'
+    | '/docs/channelku/icalendar'
+    | '/docs/channelku/ikyu'
+    | '/docs/channelku/internal-mapping'
+    | '/docs/channelku/journal'
+    | '/docs/channelku/kliknbook'
+    | '/docs/channelku/logs'
+    | '/docs/channelku/mapping-ota-ibe'
+    | '/docs/channelku/mapping-pms'
+    | '/docs/channelku/marriot-homes'
+    | '/docs/channelku/mg-bedbank'
+    | '/docs/channelku/mister-aladin'
+    | '/docs/channelku/monthly-deals'
+    | '/docs/channelku/omni-hotelier'
     | '/docs/channelku/ota-content'
+    | '/docs/channelku/pactindo'
+    | '/docs/channelku/pelican'
+    | '/docs/channelku/pertama'
     | '/docs/channelku/pms-logs'
+    | '/docs/channelku/powerpro'
+    | '/docs/channelku/pricelabs'
+    | '/docs/channelku/promotions-ota'
+    | '/docs/channelku/property'
+    | '/docs/channelku/rakuten'
+    | '/docs/channelku/rate-multiplier'
+    | '/docs/channelku/realta'
+    | '/docs/channelku/report'
     | '/docs/channelku/reservations'
+    | '/docs/channelku/roiback'
+    | '/docs/channelku/room-alocation'
+    | '/docs/channelku/rooms'
     | '/docs/channelku/settings'
+    | '/docs/channelku/skyhotel'
+    | '/docs/channelku/subusers'
     | '/docs/channelku/switch-v2'
+    | '/docs/channelku/tbo-holidays'
+    | '/docs/channelku/tiket-com'
+    | '/docs/channelku/traveloka'
+    | '/docs/channelku/triplabook'
+    | '/docs/channelku/twospaces'
+    | '/docs/channelku/vhp'
+    | '/docs/channelku/villafinder'
+    | '/docs/channelku/yearly-deals'
     | '/docs/hotelku/account-and-extras'
     | '/docs/hotelku/accounting-apps'
     | '/docs/hotelku/agent-setting'
@@ -274,15 +1106,88 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/docs/channelku/account'
+    | '/docs/channelku/agoda'
+    | '/docs/channelku/airbnb'
+    | '/docs/channelku/airhost'
+    | '/docs/channelku/alaric'
+    | '/docs/channelku/azana-voyage'
     | '/docs/channelku/back-office'
+    | '/docs/channelku/billing'
+    | '/docs/channelku/booking-com'
+    | '/docs/channelku/booking-list'
+    | '/docs/channelku/booking-policy'
+    | '/docs/channelku/bookingcom-review'
+    | '/docs/channelku/bookingcom-setup'
+    | '/docs/channelku/bookingina'
+    | '/docs/channelku/booknpay'
     | '/docs/channelku/channel-manager'
+    | '/docs/channelku/connect-request'
+    | '/docs/channelku/connected-channel'
+    | '/docs/channelku/control-panel'
+    | '/docs/channelku/create-reservation'
+    | '/docs/channelku/ctrip'
     | '/docs/channelku/dashboard'
+    | '/docs/channelku/details'
+    | '/docs/channelku/dida-travel'
+    | '/docs/channelku/dotw'
+    | '/docs/channelku/dynamic-min-night'
+    | '/docs/channelku/dynamic-pricing'
+    | '/docs/channelku/email-automation'
+    | '/docs/channelku/expedia'
+    | '/docs/channelku/full-synchro-auto'
+    | '/docs/channelku/goibibo'
+    | '/docs/channelku/google-hotel'
     | '/docs/channelku/guest-crm'
+    | '/docs/channelku/guest-database'
+    | '/docs/channelku/guestpro'
+    | '/docs/channelku/guestpro-ibe'
+    | '/docs/channelku/gustodian'
+    | '/docs/channelku/hostelworld'
+    | '/docs/channelku/hotelbeds'
+    | '/docs/channelku/hotelmu'
+    | '/docs/channelku/hoterip'
+    | '/docs/channelku/icalendar'
+    | '/docs/channelku/ikyu'
+    | '/docs/channelku/internal-mapping'
+    | '/docs/channelku/journal'
+    | '/docs/channelku/kliknbook'
+    | '/docs/channelku/logs'
+    | '/docs/channelku/mapping-ota-ibe'
+    | '/docs/channelku/mapping-pms'
+    | '/docs/channelku/marriot-homes'
+    | '/docs/channelku/mg-bedbank'
+    | '/docs/channelku/mister-aladin'
+    | '/docs/channelku/monthly-deals'
+    | '/docs/channelku/omni-hotelier'
     | '/docs/channelku/ota-content'
+    | '/docs/channelku/pactindo'
+    | '/docs/channelku/pelican'
+    | '/docs/channelku/pertama'
     | '/docs/channelku/pms-logs'
+    | '/docs/channelku/powerpro'
+    | '/docs/channelku/pricelabs'
+    | '/docs/channelku/promotions-ota'
+    | '/docs/channelku/property'
+    | '/docs/channelku/rakuten'
+    | '/docs/channelku/rate-multiplier'
+    | '/docs/channelku/realta'
+    | '/docs/channelku/report'
     | '/docs/channelku/reservations'
+    | '/docs/channelku/roiback'
+    | '/docs/channelku/room-alocation'
+    | '/docs/channelku/rooms'
     | '/docs/channelku/settings'
+    | '/docs/channelku/skyhotel'
+    | '/docs/channelku/subusers'
     | '/docs/channelku/switch-v2'
+    | '/docs/channelku/tbo-holidays'
+    | '/docs/channelku/tiket-com'
+    | '/docs/channelku/traveloka'
+    | '/docs/channelku/triplabook'
+    | '/docs/channelku/twospaces'
+    | '/docs/channelku/vhp'
+    | '/docs/channelku/villafinder'
+    | '/docs/channelku/yearly-deals'
     | '/docs/hotelku/account-and-extras'
     | '/docs/hotelku/accounting-apps'
     | '/docs/hotelku/agent-setting'
@@ -299,15 +1204,88 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DocsChannelkuAccountRoute: typeof DocsChannelkuAccountRoute
+  DocsChannelkuAgodaRoute: typeof DocsChannelkuAgodaRoute
+  DocsChannelkuAirbnbRoute: typeof DocsChannelkuAirbnbRoute
+  DocsChannelkuAirhostRoute: typeof DocsChannelkuAirhostRoute
+  DocsChannelkuAlaricRoute: typeof DocsChannelkuAlaricRoute
+  DocsChannelkuAzanaVoyageRoute: typeof DocsChannelkuAzanaVoyageRoute
   DocsChannelkuBackOfficeRoute: typeof DocsChannelkuBackOfficeRoute
+  DocsChannelkuBillingRoute: typeof DocsChannelkuBillingRoute
+  DocsChannelkuBookingComRoute: typeof DocsChannelkuBookingComRoute
+  DocsChannelkuBookingListRoute: typeof DocsChannelkuBookingListRoute
+  DocsChannelkuBookingPolicyRoute: typeof DocsChannelkuBookingPolicyRoute
+  DocsChannelkuBookingcomReviewRoute: typeof DocsChannelkuBookingcomReviewRoute
+  DocsChannelkuBookingcomSetupRoute: typeof DocsChannelkuBookingcomSetupRoute
+  DocsChannelkuBookinginaRoute: typeof DocsChannelkuBookinginaRoute
+  DocsChannelkuBooknpayRoute: typeof DocsChannelkuBooknpayRoute
   DocsChannelkuChannelManagerRoute: typeof DocsChannelkuChannelManagerRoute
+  DocsChannelkuConnectRequestRoute: typeof DocsChannelkuConnectRequestRoute
+  DocsChannelkuConnectedChannelRoute: typeof DocsChannelkuConnectedChannelRoute
+  DocsChannelkuControlPanelRoute: typeof DocsChannelkuControlPanelRoute
+  DocsChannelkuCreateReservationRoute: typeof DocsChannelkuCreateReservationRoute
+  DocsChannelkuCtripRoute: typeof DocsChannelkuCtripRoute
   DocsChannelkuDashboardRoute: typeof DocsChannelkuDashboardRoute
+  DocsChannelkuDetailsRoute: typeof DocsChannelkuDetailsRoute
+  DocsChannelkuDidaTravelRoute: typeof DocsChannelkuDidaTravelRoute
+  DocsChannelkuDotwRoute: typeof DocsChannelkuDotwRoute
+  DocsChannelkuDynamicMinNightRoute: typeof DocsChannelkuDynamicMinNightRoute
+  DocsChannelkuDynamicPricingRoute: typeof DocsChannelkuDynamicPricingRoute
+  DocsChannelkuEmailAutomationRoute: typeof DocsChannelkuEmailAutomationRoute
+  DocsChannelkuExpediaRoute: typeof DocsChannelkuExpediaRoute
+  DocsChannelkuFullSynchroAutoRoute: typeof DocsChannelkuFullSynchroAutoRoute
+  DocsChannelkuGoibiboRoute: typeof DocsChannelkuGoibiboRoute
+  DocsChannelkuGoogleHotelRoute: typeof DocsChannelkuGoogleHotelRoute
   DocsChannelkuGuestCrmRoute: typeof DocsChannelkuGuestCrmRoute
+  DocsChannelkuGuestDatabaseRoute: typeof DocsChannelkuGuestDatabaseRoute
+  DocsChannelkuGuestproRoute: typeof DocsChannelkuGuestproRoute
+  DocsChannelkuGuestproIbeRoute: typeof DocsChannelkuGuestproIbeRoute
+  DocsChannelkuGustodianRoute: typeof DocsChannelkuGustodianRoute
+  DocsChannelkuHostelworldRoute: typeof DocsChannelkuHostelworldRoute
+  DocsChannelkuHotelbedsRoute: typeof DocsChannelkuHotelbedsRoute
+  DocsChannelkuHotelmuRoute: typeof DocsChannelkuHotelmuRoute
+  DocsChannelkuHoteripRoute: typeof DocsChannelkuHoteripRoute
+  DocsChannelkuIcalendarRoute: typeof DocsChannelkuIcalendarRoute
+  DocsChannelkuIkyuRoute: typeof DocsChannelkuIkyuRoute
+  DocsChannelkuInternalMappingRoute: typeof DocsChannelkuInternalMappingRoute
+  DocsChannelkuJournalRoute: typeof DocsChannelkuJournalRoute
+  DocsChannelkuKliknbookRoute: typeof DocsChannelkuKliknbookRoute
+  DocsChannelkuLogsRoute: typeof DocsChannelkuLogsRoute
+  DocsChannelkuMappingOtaIbeRoute: typeof DocsChannelkuMappingOtaIbeRoute
+  DocsChannelkuMappingPmsRoute: typeof DocsChannelkuMappingPmsRoute
+  DocsChannelkuMarriotHomesRoute: typeof DocsChannelkuMarriotHomesRoute
+  DocsChannelkuMgBedbankRoute: typeof DocsChannelkuMgBedbankRoute
+  DocsChannelkuMisterAladinRoute: typeof DocsChannelkuMisterAladinRoute
+  DocsChannelkuMonthlyDealsRoute: typeof DocsChannelkuMonthlyDealsRoute
+  DocsChannelkuOmniHotelierRoute: typeof DocsChannelkuOmniHotelierRoute
   DocsChannelkuOtaContentRoute: typeof DocsChannelkuOtaContentRoute
+  DocsChannelkuPactindoRoute: typeof DocsChannelkuPactindoRoute
+  DocsChannelkuPelicanRoute: typeof DocsChannelkuPelicanRoute
+  DocsChannelkuPertamaRoute: typeof DocsChannelkuPertamaRoute
   DocsChannelkuPmsLogsRoute: typeof DocsChannelkuPmsLogsRoute
+  DocsChannelkuPowerproRoute: typeof DocsChannelkuPowerproRoute
+  DocsChannelkuPricelabsRoute: typeof DocsChannelkuPricelabsRoute
+  DocsChannelkuPromotionsOtaRoute: typeof DocsChannelkuPromotionsOtaRoute
+  DocsChannelkuPropertyRoute: typeof DocsChannelkuPropertyRoute
+  DocsChannelkuRakutenRoute: typeof DocsChannelkuRakutenRoute
+  DocsChannelkuRateMultiplierRoute: typeof DocsChannelkuRateMultiplierRoute
+  DocsChannelkuRealtaRoute: typeof DocsChannelkuRealtaRoute
+  DocsChannelkuReportRoute: typeof DocsChannelkuReportRoute
   DocsChannelkuReservationsRoute: typeof DocsChannelkuReservationsRoute
+  DocsChannelkuRoibackRoute: typeof DocsChannelkuRoibackRoute
+  DocsChannelkuRoomAlocationRoute: typeof DocsChannelkuRoomAlocationRoute
+  DocsChannelkuRoomsRoute: typeof DocsChannelkuRoomsRoute
   DocsChannelkuSettingsRoute: typeof DocsChannelkuSettingsRoute
+  DocsChannelkuSkyhotelRoute: typeof DocsChannelkuSkyhotelRoute
+  DocsChannelkuSubusersRoute: typeof DocsChannelkuSubusersRoute
   DocsChannelkuSwitchV2Route: typeof DocsChannelkuSwitchV2Route
+  DocsChannelkuTboHolidaysRoute: typeof DocsChannelkuTboHolidaysRoute
+  DocsChannelkuTiketComRoute: typeof DocsChannelkuTiketComRoute
+  DocsChannelkuTravelokaRoute: typeof DocsChannelkuTravelokaRoute
+  DocsChannelkuTriplabookRoute: typeof DocsChannelkuTriplabookRoute
+  DocsChannelkuTwospacesRoute: typeof DocsChannelkuTwospacesRoute
+  DocsChannelkuVhpRoute: typeof DocsChannelkuVhpRoute
+  DocsChannelkuVillafinderRoute: typeof DocsChannelkuVillafinderRoute
+  DocsChannelkuYearlyDealsRoute: typeof DocsChannelkuYearlyDealsRoute
   DocsHotelkuAccountAndExtrasRoute: typeof DocsHotelkuAccountAndExtrasRoute
   DocsHotelkuAccountingAppsRoute: typeof DocsHotelkuAccountingAppsRoute
   DocsHotelkuAgentSettingRoute: typeof DocsHotelkuAgentSettingRoute
@@ -337,11 +1315,102 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DocsChannelkuAccountRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/docs/channelku/agoda': {
+      id: '/docs/channelku/agoda'
+      path: '/docs/channelku/agoda'
+      fullPath: '/docs/channelku/agoda'
+      preLoaderRoute: typeof DocsChannelkuAgodaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/airbnb': {
+      id: '/docs/channelku/airbnb'
+      path: '/docs/channelku/airbnb'
+      fullPath: '/docs/channelku/airbnb'
+      preLoaderRoute: typeof DocsChannelkuAirbnbRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/airhost': {
+      id: '/docs/channelku/airhost'
+      path: '/docs/channelku/airhost'
+      fullPath: '/docs/channelku/airhost'
+      preLoaderRoute: typeof DocsChannelkuAirhostRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/alaric': {
+      id: '/docs/channelku/alaric'
+      path: '/docs/channelku/alaric'
+      fullPath: '/docs/channelku/alaric'
+      preLoaderRoute: typeof DocsChannelkuAlaricRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/azana-voyage': {
+      id: '/docs/channelku/azana-voyage'
+      path: '/docs/channelku/azana-voyage'
+      fullPath: '/docs/channelku/azana-voyage'
+      preLoaderRoute: typeof DocsChannelkuAzanaVoyageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/docs/channelku/back-office': {
       id: '/docs/channelku/back-office'
       path: '/docs/channelku/back-office'
       fullPath: '/docs/channelku/back-office'
       preLoaderRoute: typeof DocsChannelkuBackOfficeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/billing': {
+      id: '/docs/channelku/billing'
+      path: '/docs/channelku/billing'
+      fullPath: '/docs/channelku/billing'
+      preLoaderRoute: typeof DocsChannelkuBillingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/booking-com': {
+      id: '/docs/channelku/booking-com'
+      path: '/docs/channelku/booking-com'
+      fullPath: '/docs/channelku/booking-com'
+      preLoaderRoute: typeof DocsChannelkuBookingComRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/booking-list': {
+      id: '/docs/channelku/booking-list'
+      path: '/docs/channelku/booking-list'
+      fullPath: '/docs/channelku/booking-list'
+      preLoaderRoute: typeof DocsChannelkuBookingListRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/booking-policy': {
+      id: '/docs/channelku/booking-policy'
+      path: '/docs/channelku/booking-policy'
+      fullPath: '/docs/channelku/booking-policy'
+      preLoaderRoute: typeof DocsChannelkuBookingPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/bookingcom-review': {
+      id: '/docs/channelku/bookingcom-review'
+      path: '/docs/channelku/bookingcom-review'
+      fullPath: '/docs/channelku/bookingcom-review'
+      preLoaderRoute: typeof DocsChannelkuBookingcomReviewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/bookingcom-setup': {
+      id: '/docs/channelku/bookingcom-setup'
+      path: '/docs/channelku/bookingcom-setup'
+      fullPath: '/docs/channelku/bookingcom-setup'
+      preLoaderRoute: typeof DocsChannelkuBookingcomSetupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/bookingina': {
+      id: '/docs/channelku/bookingina'
+      path: '/docs/channelku/bookingina'
+      fullPath: '/docs/channelku/bookingina'
+      preLoaderRoute: typeof DocsChannelkuBookinginaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/booknpay': {
+      id: '/docs/channelku/booknpay'
+      path: '/docs/channelku/booknpay'
+      fullPath: '/docs/channelku/booknpay'
+      preLoaderRoute: typeof DocsChannelkuBooknpayRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/docs/channelku/channel-manager': {
@@ -351,11 +1420,116 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DocsChannelkuChannelManagerRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/docs/channelku/connect-request': {
+      id: '/docs/channelku/connect-request'
+      path: '/docs/channelku/connect-request'
+      fullPath: '/docs/channelku/connect-request'
+      preLoaderRoute: typeof DocsChannelkuConnectRequestRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/connected-channel': {
+      id: '/docs/channelku/connected-channel'
+      path: '/docs/channelku/connected-channel'
+      fullPath: '/docs/channelku/connected-channel'
+      preLoaderRoute: typeof DocsChannelkuConnectedChannelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/control-panel': {
+      id: '/docs/channelku/control-panel'
+      path: '/docs/channelku/control-panel'
+      fullPath: '/docs/channelku/control-panel'
+      preLoaderRoute: typeof DocsChannelkuControlPanelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/create-reservation': {
+      id: '/docs/channelku/create-reservation'
+      path: '/docs/channelku/create-reservation'
+      fullPath: '/docs/channelku/create-reservation'
+      preLoaderRoute: typeof DocsChannelkuCreateReservationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/ctrip': {
+      id: '/docs/channelku/ctrip'
+      path: '/docs/channelku/ctrip'
+      fullPath: '/docs/channelku/ctrip'
+      preLoaderRoute: typeof DocsChannelkuCtripRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/docs/channelku/dashboard': {
       id: '/docs/channelku/dashboard'
       path: '/docs/channelku/dashboard'
       fullPath: '/docs/channelku/dashboard'
       preLoaderRoute: typeof DocsChannelkuDashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/details': {
+      id: '/docs/channelku/details'
+      path: '/docs/channelku/details'
+      fullPath: '/docs/channelku/details'
+      preLoaderRoute: typeof DocsChannelkuDetailsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/dida-travel': {
+      id: '/docs/channelku/dida-travel'
+      path: '/docs/channelku/dida-travel'
+      fullPath: '/docs/channelku/dida-travel'
+      preLoaderRoute: typeof DocsChannelkuDidaTravelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/dotw': {
+      id: '/docs/channelku/dotw'
+      path: '/docs/channelku/dotw'
+      fullPath: '/docs/channelku/dotw'
+      preLoaderRoute: typeof DocsChannelkuDotwRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/dynamic-min-night': {
+      id: '/docs/channelku/dynamic-min-night'
+      path: '/docs/channelku/dynamic-min-night'
+      fullPath: '/docs/channelku/dynamic-min-night'
+      preLoaderRoute: typeof DocsChannelkuDynamicMinNightRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/dynamic-pricing': {
+      id: '/docs/channelku/dynamic-pricing'
+      path: '/docs/channelku/dynamic-pricing'
+      fullPath: '/docs/channelku/dynamic-pricing'
+      preLoaderRoute: typeof DocsChannelkuDynamicPricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/email-automation': {
+      id: '/docs/channelku/email-automation'
+      path: '/docs/channelku/email-automation'
+      fullPath: '/docs/channelku/email-automation'
+      preLoaderRoute: typeof DocsChannelkuEmailAutomationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/expedia': {
+      id: '/docs/channelku/expedia'
+      path: '/docs/channelku/expedia'
+      fullPath: '/docs/channelku/expedia'
+      preLoaderRoute: typeof DocsChannelkuExpediaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/full-synchro-auto': {
+      id: '/docs/channelku/full-synchro-auto'
+      path: '/docs/channelku/full-synchro-auto'
+      fullPath: '/docs/channelku/full-synchro-auto'
+      preLoaderRoute: typeof DocsChannelkuFullSynchroAutoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/goibibo': {
+      id: '/docs/channelku/goibibo'
+      path: '/docs/channelku/goibibo'
+      fullPath: '/docs/channelku/goibibo'
+      preLoaderRoute: typeof DocsChannelkuGoibiboRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/google-hotel': {
+      id: '/docs/channelku/google-hotel'
+      path: '/docs/channelku/google-hotel'
+      fullPath: '/docs/channelku/google-hotel'
+      preLoaderRoute: typeof DocsChannelkuGoogleHotelRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/docs/channelku/guest-crm': {
@@ -365,11 +1539,179 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DocsChannelkuGuestCrmRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/docs/channelku/guest-database': {
+      id: '/docs/channelku/guest-database'
+      path: '/docs/channelku/guest-database'
+      fullPath: '/docs/channelku/guest-database'
+      preLoaderRoute: typeof DocsChannelkuGuestDatabaseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/guestpro': {
+      id: '/docs/channelku/guestpro'
+      path: '/docs/channelku/guestpro'
+      fullPath: '/docs/channelku/guestpro'
+      preLoaderRoute: typeof DocsChannelkuGuestproRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/guestpro-ibe': {
+      id: '/docs/channelku/guestpro-ibe'
+      path: '/docs/channelku/guestpro-ibe'
+      fullPath: '/docs/channelku/guestpro-ibe'
+      preLoaderRoute: typeof DocsChannelkuGuestproIbeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/gustodian': {
+      id: '/docs/channelku/gustodian'
+      path: '/docs/channelku/gustodian'
+      fullPath: '/docs/channelku/gustodian'
+      preLoaderRoute: typeof DocsChannelkuGustodianRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/hostelworld': {
+      id: '/docs/channelku/hostelworld'
+      path: '/docs/channelku/hostelworld'
+      fullPath: '/docs/channelku/hostelworld'
+      preLoaderRoute: typeof DocsChannelkuHostelworldRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/hotelbeds': {
+      id: '/docs/channelku/hotelbeds'
+      path: '/docs/channelku/hotelbeds'
+      fullPath: '/docs/channelku/hotelbeds'
+      preLoaderRoute: typeof DocsChannelkuHotelbedsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/hotelmu': {
+      id: '/docs/channelku/hotelmu'
+      path: '/docs/channelku/hotelmu'
+      fullPath: '/docs/channelku/hotelmu'
+      preLoaderRoute: typeof DocsChannelkuHotelmuRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/hoterip': {
+      id: '/docs/channelku/hoterip'
+      path: '/docs/channelku/hoterip'
+      fullPath: '/docs/channelku/hoterip'
+      preLoaderRoute: typeof DocsChannelkuHoteripRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/icalendar': {
+      id: '/docs/channelku/icalendar'
+      path: '/docs/channelku/icalendar'
+      fullPath: '/docs/channelku/icalendar'
+      preLoaderRoute: typeof DocsChannelkuIcalendarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/ikyu': {
+      id: '/docs/channelku/ikyu'
+      path: '/docs/channelku/ikyu'
+      fullPath: '/docs/channelku/ikyu'
+      preLoaderRoute: typeof DocsChannelkuIkyuRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/internal-mapping': {
+      id: '/docs/channelku/internal-mapping'
+      path: '/docs/channelku/internal-mapping'
+      fullPath: '/docs/channelku/internal-mapping'
+      preLoaderRoute: typeof DocsChannelkuInternalMappingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/journal': {
+      id: '/docs/channelku/journal'
+      path: '/docs/channelku/journal'
+      fullPath: '/docs/channelku/journal'
+      preLoaderRoute: typeof DocsChannelkuJournalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/kliknbook': {
+      id: '/docs/channelku/kliknbook'
+      path: '/docs/channelku/kliknbook'
+      fullPath: '/docs/channelku/kliknbook'
+      preLoaderRoute: typeof DocsChannelkuKliknbookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/logs': {
+      id: '/docs/channelku/logs'
+      path: '/docs/channelku/logs'
+      fullPath: '/docs/channelku/logs'
+      preLoaderRoute: typeof DocsChannelkuLogsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/mapping-ota-ibe': {
+      id: '/docs/channelku/mapping-ota-ibe'
+      path: '/docs/channelku/mapping-ota-ibe'
+      fullPath: '/docs/channelku/mapping-ota-ibe'
+      preLoaderRoute: typeof DocsChannelkuMappingOtaIbeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/mapping-pms': {
+      id: '/docs/channelku/mapping-pms'
+      path: '/docs/channelku/mapping-pms'
+      fullPath: '/docs/channelku/mapping-pms'
+      preLoaderRoute: typeof DocsChannelkuMappingPmsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/marriot-homes': {
+      id: '/docs/channelku/marriot-homes'
+      path: '/docs/channelku/marriot-homes'
+      fullPath: '/docs/channelku/marriot-homes'
+      preLoaderRoute: typeof DocsChannelkuMarriotHomesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/mg-bedbank': {
+      id: '/docs/channelku/mg-bedbank'
+      path: '/docs/channelku/mg-bedbank'
+      fullPath: '/docs/channelku/mg-bedbank'
+      preLoaderRoute: typeof DocsChannelkuMgBedbankRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/mister-aladin': {
+      id: '/docs/channelku/mister-aladin'
+      path: '/docs/channelku/mister-aladin'
+      fullPath: '/docs/channelku/mister-aladin'
+      preLoaderRoute: typeof DocsChannelkuMisterAladinRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/monthly-deals': {
+      id: '/docs/channelku/monthly-deals'
+      path: '/docs/channelku/monthly-deals'
+      fullPath: '/docs/channelku/monthly-deals'
+      preLoaderRoute: typeof DocsChannelkuMonthlyDealsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/omni-hotelier': {
+      id: '/docs/channelku/omni-hotelier'
+      path: '/docs/channelku/omni-hotelier'
+      fullPath: '/docs/channelku/omni-hotelier'
+      preLoaderRoute: typeof DocsChannelkuOmniHotelierRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/docs/channelku/ota-content': {
       id: '/docs/channelku/ota-content'
       path: '/docs/channelku/ota-content'
       fullPath: '/docs/channelku/ota-content'
       preLoaderRoute: typeof DocsChannelkuOtaContentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/pactindo': {
+      id: '/docs/channelku/pactindo'
+      path: '/docs/channelku/pactindo'
+      fullPath: '/docs/channelku/pactindo'
+      preLoaderRoute: typeof DocsChannelkuPactindoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/pelican': {
+      id: '/docs/channelku/pelican'
+      path: '/docs/channelku/pelican'
+      fullPath: '/docs/channelku/pelican'
+      preLoaderRoute: typeof DocsChannelkuPelicanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/pertama': {
+      id: '/docs/channelku/pertama'
+      path: '/docs/channelku/pertama'
+      fullPath: '/docs/channelku/pertama'
+      preLoaderRoute: typeof DocsChannelkuPertamaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/docs/channelku/pms-logs': {
@@ -379,11 +1721,88 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DocsChannelkuPmsLogsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/docs/channelku/powerpro': {
+      id: '/docs/channelku/powerpro'
+      path: '/docs/channelku/powerpro'
+      fullPath: '/docs/channelku/powerpro'
+      preLoaderRoute: typeof DocsChannelkuPowerproRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/pricelabs': {
+      id: '/docs/channelku/pricelabs'
+      path: '/docs/channelku/pricelabs'
+      fullPath: '/docs/channelku/pricelabs'
+      preLoaderRoute: typeof DocsChannelkuPricelabsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/promotions-ota': {
+      id: '/docs/channelku/promotions-ota'
+      path: '/docs/channelku/promotions-ota'
+      fullPath: '/docs/channelku/promotions-ota'
+      preLoaderRoute: typeof DocsChannelkuPromotionsOtaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/property': {
+      id: '/docs/channelku/property'
+      path: '/docs/channelku/property'
+      fullPath: '/docs/channelku/property'
+      preLoaderRoute: typeof DocsChannelkuPropertyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/rakuten': {
+      id: '/docs/channelku/rakuten'
+      path: '/docs/channelku/rakuten'
+      fullPath: '/docs/channelku/rakuten'
+      preLoaderRoute: typeof DocsChannelkuRakutenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/rate-multiplier': {
+      id: '/docs/channelku/rate-multiplier'
+      path: '/docs/channelku/rate-multiplier'
+      fullPath: '/docs/channelku/rate-multiplier'
+      preLoaderRoute: typeof DocsChannelkuRateMultiplierRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/realta': {
+      id: '/docs/channelku/realta'
+      path: '/docs/channelku/realta'
+      fullPath: '/docs/channelku/realta'
+      preLoaderRoute: typeof DocsChannelkuRealtaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/report': {
+      id: '/docs/channelku/report'
+      path: '/docs/channelku/report'
+      fullPath: '/docs/channelku/report'
+      preLoaderRoute: typeof DocsChannelkuReportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/docs/channelku/reservations': {
       id: '/docs/channelku/reservations'
       path: '/docs/channelku/reservations'
       fullPath: '/docs/channelku/reservations'
       preLoaderRoute: typeof DocsChannelkuReservationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/roiback': {
+      id: '/docs/channelku/roiback'
+      path: '/docs/channelku/roiback'
+      fullPath: '/docs/channelku/roiback'
+      preLoaderRoute: typeof DocsChannelkuRoibackRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/room-alocation': {
+      id: '/docs/channelku/room-alocation'
+      path: '/docs/channelku/room-alocation'
+      fullPath: '/docs/channelku/room-alocation'
+      preLoaderRoute: typeof DocsChannelkuRoomAlocationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/rooms': {
+      id: '/docs/channelku/rooms'
+      path: '/docs/channelku/rooms'
+      fullPath: '/docs/channelku/rooms'
+      preLoaderRoute: typeof DocsChannelkuRoomsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/docs/channelku/settings': {
@@ -393,11 +1812,81 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DocsChannelkuSettingsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/docs/channelku/skyhotel': {
+      id: '/docs/channelku/skyhotel'
+      path: '/docs/channelku/skyhotel'
+      fullPath: '/docs/channelku/skyhotel'
+      preLoaderRoute: typeof DocsChannelkuSkyhotelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/subusers': {
+      id: '/docs/channelku/subusers'
+      path: '/docs/channelku/subusers'
+      fullPath: '/docs/channelku/subusers'
+      preLoaderRoute: typeof DocsChannelkuSubusersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/docs/channelku/switch-v2': {
       id: '/docs/channelku/switch-v2'
       path: '/docs/channelku/switch-v2'
       fullPath: '/docs/channelku/switch-v2'
       preLoaderRoute: typeof DocsChannelkuSwitchV2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/tbo-holidays': {
+      id: '/docs/channelku/tbo-holidays'
+      path: '/docs/channelku/tbo-holidays'
+      fullPath: '/docs/channelku/tbo-holidays'
+      preLoaderRoute: typeof DocsChannelkuTboHolidaysRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/tiket-com': {
+      id: '/docs/channelku/tiket-com'
+      path: '/docs/channelku/tiket-com'
+      fullPath: '/docs/channelku/tiket-com'
+      preLoaderRoute: typeof DocsChannelkuTiketComRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/traveloka': {
+      id: '/docs/channelku/traveloka'
+      path: '/docs/channelku/traveloka'
+      fullPath: '/docs/channelku/traveloka'
+      preLoaderRoute: typeof DocsChannelkuTravelokaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/triplabook': {
+      id: '/docs/channelku/triplabook'
+      path: '/docs/channelku/triplabook'
+      fullPath: '/docs/channelku/triplabook'
+      preLoaderRoute: typeof DocsChannelkuTriplabookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/twospaces': {
+      id: '/docs/channelku/twospaces'
+      path: '/docs/channelku/twospaces'
+      fullPath: '/docs/channelku/twospaces'
+      preLoaderRoute: typeof DocsChannelkuTwospacesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/vhp': {
+      id: '/docs/channelku/vhp'
+      path: '/docs/channelku/vhp'
+      fullPath: '/docs/channelku/vhp'
+      preLoaderRoute: typeof DocsChannelkuVhpRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/villafinder': {
+      id: '/docs/channelku/villafinder'
+      path: '/docs/channelku/villafinder'
+      fullPath: '/docs/channelku/villafinder'
+      preLoaderRoute: typeof DocsChannelkuVillafinderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/channelku/yearly-deals': {
+      id: '/docs/channelku/yearly-deals'
+      path: '/docs/channelku/yearly-deals'
+      fullPath: '/docs/channelku/yearly-deals'
+      preLoaderRoute: typeof DocsChannelkuYearlyDealsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/docs/hotelku/account-and-extras': {
@@ -483,15 +1972,88 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DocsChannelkuAccountRoute: DocsChannelkuAccountRoute,
+  DocsChannelkuAgodaRoute: DocsChannelkuAgodaRoute,
+  DocsChannelkuAirbnbRoute: DocsChannelkuAirbnbRoute,
+  DocsChannelkuAirhostRoute: DocsChannelkuAirhostRoute,
+  DocsChannelkuAlaricRoute: DocsChannelkuAlaricRoute,
+  DocsChannelkuAzanaVoyageRoute: DocsChannelkuAzanaVoyageRoute,
   DocsChannelkuBackOfficeRoute: DocsChannelkuBackOfficeRoute,
+  DocsChannelkuBillingRoute: DocsChannelkuBillingRoute,
+  DocsChannelkuBookingComRoute: DocsChannelkuBookingComRoute,
+  DocsChannelkuBookingListRoute: DocsChannelkuBookingListRoute,
+  DocsChannelkuBookingPolicyRoute: DocsChannelkuBookingPolicyRoute,
+  DocsChannelkuBookingcomReviewRoute: DocsChannelkuBookingcomReviewRoute,
+  DocsChannelkuBookingcomSetupRoute: DocsChannelkuBookingcomSetupRoute,
+  DocsChannelkuBookinginaRoute: DocsChannelkuBookinginaRoute,
+  DocsChannelkuBooknpayRoute: DocsChannelkuBooknpayRoute,
   DocsChannelkuChannelManagerRoute: DocsChannelkuChannelManagerRoute,
+  DocsChannelkuConnectRequestRoute: DocsChannelkuConnectRequestRoute,
+  DocsChannelkuConnectedChannelRoute: DocsChannelkuConnectedChannelRoute,
+  DocsChannelkuControlPanelRoute: DocsChannelkuControlPanelRoute,
+  DocsChannelkuCreateReservationRoute: DocsChannelkuCreateReservationRoute,
+  DocsChannelkuCtripRoute: DocsChannelkuCtripRoute,
   DocsChannelkuDashboardRoute: DocsChannelkuDashboardRoute,
+  DocsChannelkuDetailsRoute: DocsChannelkuDetailsRoute,
+  DocsChannelkuDidaTravelRoute: DocsChannelkuDidaTravelRoute,
+  DocsChannelkuDotwRoute: DocsChannelkuDotwRoute,
+  DocsChannelkuDynamicMinNightRoute: DocsChannelkuDynamicMinNightRoute,
+  DocsChannelkuDynamicPricingRoute: DocsChannelkuDynamicPricingRoute,
+  DocsChannelkuEmailAutomationRoute: DocsChannelkuEmailAutomationRoute,
+  DocsChannelkuExpediaRoute: DocsChannelkuExpediaRoute,
+  DocsChannelkuFullSynchroAutoRoute: DocsChannelkuFullSynchroAutoRoute,
+  DocsChannelkuGoibiboRoute: DocsChannelkuGoibiboRoute,
+  DocsChannelkuGoogleHotelRoute: DocsChannelkuGoogleHotelRoute,
   DocsChannelkuGuestCrmRoute: DocsChannelkuGuestCrmRoute,
+  DocsChannelkuGuestDatabaseRoute: DocsChannelkuGuestDatabaseRoute,
+  DocsChannelkuGuestproRoute: DocsChannelkuGuestproRoute,
+  DocsChannelkuGuestproIbeRoute: DocsChannelkuGuestproIbeRoute,
+  DocsChannelkuGustodianRoute: DocsChannelkuGustodianRoute,
+  DocsChannelkuHostelworldRoute: DocsChannelkuHostelworldRoute,
+  DocsChannelkuHotelbedsRoute: DocsChannelkuHotelbedsRoute,
+  DocsChannelkuHotelmuRoute: DocsChannelkuHotelmuRoute,
+  DocsChannelkuHoteripRoute: DocsChannelkuHoteripRoute,
+  DocsChannelkuIcalendarRoute: DocsChannelkuIcalendarRoute,
+  DocsChannelkuIkyuRoute: DocsChannelkuIkyuRoute,
+  DocsChannelkuInternalMappingRoute: DocsChannelkuInternalMappingRoute,
+  DocsChannelkuJournalRoute: DocsChannelkuJournalRoute,
+  DocsChannelkuKliknbookRoute: DocsChannelkuKliknbookRoute,
+  DocsChannelkuLogsRoute: DocsChannelkuLogsRoute,
+  DocsChannelkuMappingOtaIbeRoute: DocsChannelkuMappingOtaIbeRoute,
+  DocsChannelkuMappingPmsRoute: DocsChannelkuMappingPmsRoute,
+  DocsChannelkuMarriotHomesRoute: DocsChannelkuMarriotHomesRoute,
+  DocsChannelkuMgBedbankRoute: DocsChannelkuMgBedbankRoute,
+  DocsChannelkuMisterAladinRoute: DocsChannelkuMisterAladinRoute,
+  DocsChannelkuMonthlyDealsRoute: DocsChannelkuMonthlyDealsRoute,
+  DocsChannelkuOmniHotelierRoute: DocsChannelkuOmniHotelierRoute,
   DocsChannelkuOtaContentRoute: DocsChannelkuOtaContentRoute,
+  DocsChannelkuPactindoRoute: DocsChannelkuPactindoRoute,
+  DocsChannelkuPelicanRoute: DocsChannelkuPelicanRoute,
+  DocsChannelkuPertamaRoute: DocsChannelkuPertamaRoute,
   DocsChannelkuPmsLogsRoute: DocsChannelkuPmsLogsRoute,
+  DocsChannelkuPowerproRoute: DocsChannelkuPowerproRoute,
+  DocsChannelkuPricelabsRoute: DocsChannelkuPricelabsRoute,
+  DocsChannelkuPromotionsOtaRoute: DocsChannelkuPromotionsOtaRoute,
+  DocsChannelkuPropertyRoute: DocsChannelkuPropertyRoute,
+  DocsChannelkuRakutenRoute: DocsChannelkuRakutenRoute,
+  DocsChannelkuRateMultiplierRoute: DocsChannelkuRateMultiplierRoute,
+  DocsChannelkuRealtaRoute: DocsChannelkuRealtaRoute,
+  DocsChannelkuReportRoute: DocsChannelkuReportRoute,
   DocsChannelkuReservationsRoute: DocsChannelkuReservationsRoute,
+  DocsChannelkuRoibackRoute: DocsChannelkuRoibackRoute,
+  DocsChannelkuRoomAlocationRoute: DocsChannelkuRoomAlocationRoute,
+  DocsChannelkuRoomsRoute: DocsChannelkuRoomsRoute,
   DocsChannelkuSettingsRoute: DocsChannelkuSettingsRoute,
+  DocsChannelkuSkyhotelRoute: DocsChannelkuSkyhotelRoute,
+  DocsChannelkuSubusersRoute: DocsChannelkuSubusersRoute,
   DocsChannelkuSwitchV2Route: DocsChannelkuSwitchV2Route,
+  DocsChannelkuTboHolidaysRoute: DocsChannelkuTboHolidaysRoute,
+  DocsChannelkuTiketComRoute: DocsChannelkuTiketComRoute,
+  DocsChannelkuTravelokaRoute: DocsChannelkuTravelokaRoute,
+  DocsChannelkuTriplabookRoute: DocsChannelkuTriplabookRoute,
+  DocsChannelkuTwospacesRoute: DocsChannelkuTwospacesRoute,
+  DocsChannelkuVhpRoute: DocsChannelkuVhpRoute,
+  DocsChannelkuVillafinderRoute: DocsChannelkuVillafinderRoute,
+  DocsChannelkuYearlyDealsRoute: DocsChannelkuYearlyDealsRoute,
   DocsHotelkuAccountAndExtrasRoute: DocsHotelkuAccountAndExtrasRoute,
   DocsHotelkuAccountingAppsRoute: DocsHotelkuAccountingAppsRoute,
   DocsHotelkuAgentSettingRoute: DocsHotelkuAgentSettingRoute,
