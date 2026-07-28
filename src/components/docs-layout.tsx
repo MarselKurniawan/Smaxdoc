@@ -1,5 +1,12 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
+import { Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 export interface SidebarItem {
   label: string;
@@ -21,7 +28,21 @@ interface DocsLayoutProps {
   children: ReactNode;
 }
 
-export function DocsHeader({ activeProduct }: { activeProduct?: "Channelku" | "Hotelku" }) {
+export function DocsHeader({
+  activeProduct,
+  sidebar,
+  activeTo,
+  openMenus,
+  setOpenMenus,
+}: {
+  activeProduct?: "Channelku" | "Hotelku";
+  sidebar?: SidebarItem[];
+  activeTo?: string;
+  openMenus?: Record<string, boolean>;
+  setOpenMenus?: React.Dispatch<
+  React.SetStateAction<Record<string, boolean>>
+>;
+}) {
   const navItems: Array<{ label: string; to: string }> = [
     { label: "Channelku", to: "/docs/channelku/dashboard" },
     { label: "Hotelku", to: "/docs/hotelku/dashboard" },
@@ -29,12 +50,61 @@ export function DocsHeader({ activeProduct }: { activeProduct?: "Channelku" | "H
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/90 backdrop-blur">
-      <div className="mx-auto flex h-14 max-w-[1400px] items-center gap-8 px-6">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="flex h-7 w-7 items-center justify-center rounded-md bg-[#1d4ed8] text-white text-sm font-bold">S</div>
-          <span className="text-[15px] font-semibold tracking-[-0.03em]">SinergiMax Documentation</span>
-        </Link>
-        <nav className="flex items-center gap-6 text-sm">
+      <div className="mx-auto flex h-14 max-w-[1400px] items-center gap-3 px-4 lg:gap-8 lg:px-6">
+        {sidebar && openMenus && setOpenMenus && (
+  <Sheet>
+    <SheetTrigger asChild>
+      <Button
+        variant="ghost"
+        size="icon"
+        className="lg:hidden"
+      >
+        <Menu className="h-5 w-5" />
+      </Button>
+    </SheetTrigger>
+
+  <SheetContent
+  side="left"
+  className="w-[320px] max-w-[90vw] p-0 flex flex-col"
+>
+  <div className="border-b p-4 shrink-0">
+    <h2 className="font-semibold">
+      SinergiMax Documentation
+    </h2>
+  </div>
+
+  <div className="flex-1 overflow-y-auto p-4">
+    <div className="mb-4">
+      <p className="text-sm font-semibold text-muted-foreground">
+        Documentation
+      </p>
+    </div>
+
+    <nav className="space-y-1">
+      {sidebar.map((item) => (
+        <SidebarNode
+          key={item.label}
+          item={item}
+          activeTo={activeTo}
+          openMenus={openMenus}
+          setOpenMenus={setOpenMenus}
+        />
+      ))}
+    </nav>
+  </div>
+</SheetContent>
+</Sheet>
+        )}
+        <Link to="/" className="flex items-center gap-2 min-w-0">
+  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[#1d4ed8] text-white text-sm font-bold">
+    S
+  </div>
+
+  <span className="truncate text-[15px] font-semibold tracking-[-0.03em]">
+    SinergiMax Documentation
+  </span>
+</Link>
+        <nav className="hidden lg:flex items-center gap-6 text-sm">
           {navItems.map((n) => (
             <Link
               key={n.to}
@@ -68,7 +138,13 @@ useEffect(() => {
 
 return (  
     <div className="min-h-screen bg-background text-foreground">
-      <DocsHeader activeProduct={product} />
+      <DocsHeader
+  activeProduct={product}
+  sidebar={sidebar}
+  activeTo={activeTo}
+  openMenus={openMenus}
+  setOpenMenus={setOpenMenus}
+/>
       <div className="mx-auto flex max-w-[1400px] gap-8 px-6 py-8">
         {/* Sidebar */}
         <aside className="hidden w-64 shrink-0 lg:block">

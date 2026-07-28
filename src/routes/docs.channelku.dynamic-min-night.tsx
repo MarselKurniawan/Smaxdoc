@@ -24,7 +24,7 @@ function Page() {
       <p className="mt-4">
         <strong>Dynamic Minimum Night</strong> adalah fitur yang secara otomatis menyesuaikan <strong>minimum malam</strong> 
         berdasarkan <strong>pola ketersediaan</strong>. Fitur ini dirancang untuk mengoptimalkan okupansi dan mencegah 
-        <strong>celah pemesanan yang tidak diinginkan</strong>, seperti <strong>"orphan nights"</strong>(malam yang terisolasi), yang terjadi ketika 
+        <strong>celah pemesanan yang tidak diinginkan</strong>, seperti <strong>"malam yatim"</strong>, yang terjadi ketika 
         hanya tersisa satu malam di antara dua tanggal pemesanan.
       </p>
 
@@ -43,8 +43,9 @@ function Page() {
               <li>
                 Untuk menonaktifkannya, alihkan opsi ke <strong>Nonaktif</strong>.
               </li>
-                        <Figure label=""
-                        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1746757529/01._enable_dynamic_min_night_qa3n3d.jpg" />
+              <Figure label=""
+              src="https://res.cloudinary.com/dayo5hqig/image/upload/v1746757529/01._enable_dynamic_min_night_qa3n3d.jpg" />
+
             </ul>
           </li>
           <li>
@@ -53,8 +54,8 @@ function Page() {
               <li>
                 Pilih <strong>Durasi Menginap</strong> yang diinginkan untuk jumlah minimum malam yang harus diinap oleh tamu.
               </li>
-                        <Figure label=""
-                        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1746757529/02._length_of_night_z5wrff.jpg" />
+              <Figure label=""
+              src="https://res.cloudinary.com/dayo5hqig/image/upload/v1746757529/02._length_of_night_z5wrff.jpg" />
             </ul>
           </li>
           <li>
@@ -66,8 +67,8 @@ function Page() {
               <li>
                 Anda dapat memilih <strong>kamar tertentu</strong> atau menerapkan pengaturan ke <strong>Semua Kamar Aktif</strong>.
               </li>
-                        <Figure label=""
-                        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1746757529/03._select_room_kk5qtk.jpg" /> 
+              <Figure label=""
+              src="https://res.cloudinary.com/dayo5hqig/image/upload/v1746757529/03._select_room_kk5qtk.jpg" />
             </ul>
           </li>
           <li>
@@ -75,8 +76,8 @@ function Page() {
             <br />
             Setelah mengonfigurasi pengaturan, klik <strong>Simpan</strong> untuk menerapkan perubahan.
           </li>
-                    <Figure label=""
-                    src="https://res.cloudinary.com/dayo5hqig/image/upload/v1746757529/04._save_changes_button_jsdquo.jpg" />
+          <Figure label=""
+          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1746757529/04._save_changes_button_jsdquo.jpg" />
         </ol>
 
         <div className="mt-4 rounded-lg border bg-blue-50 p-4 dark:bg-blue-950/20">

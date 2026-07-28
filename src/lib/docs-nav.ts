@@ -69,7 +69,7 @@ export const channelkuSidebar: SidebarItem[] = [
               { label: "BooknPay", to: "/docs/channelku/booknpay", }, ], },
           { label: "RMS Channel", 
             children: [
-              { label: "Pricelabs", }, ], }, ], },
+              { label: "Pricelabs", to: "/docs/channelku/pricelabs", }, ], }, ], },
       { label: "Saluran Terhubung", to: "/docs/channelku/connected-channel", },
       { label: "Rate Multiplier", to: "/docs/channelku/rate-multiplier", },
       { label: "Alokasi Kamar", to: "/docs/channelku/room-alocation", },
@@ -92,7 +92,7 @@ export const channelkuSidebar: SidebarItem[] = [
       { label: "Sub Users", to: "/docs/channelku/subusers", }, ], },
   { label: "Guest CRM",
     children: [
-      { label: "Otomatisasi Email", to: "/docs/channelku/email-autoation", },
+      { label: "Otomatisasi Email", to: "/docs/channelku/email-automation", },
       { label: "Guest Database", to: "/docs/channelku/guest-database", }, ], },
   { label: "OTA Content",
     children: [
