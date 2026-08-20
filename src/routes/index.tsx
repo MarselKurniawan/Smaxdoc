@@ -85,7 +85,7 @@ function Home() {
           />
           <ProductCard
             variant="hotelku"
-            title="Hotelku"
+            title="Front Office System"
             description="Manage all sources of reservations such as direct bookings, walk-in guests, and online travel agents. Also manage housekeeping, expense reports and other features."
             to="/docs/hotelku/dashboard"
           />
