@@ -130,22 +130,22 @@ function Page() {
           src="https://res.cloudinary.com/dayo5hqig/image/upload/v1747107147/08._click_edit_lg3bcq.jpg" />
           <li>Perbarui <strong>detail tamu</strong> sesuai kebutuhan.</li>
           <Figure label=""
-          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1747108750/19._edit_invoice_details_jvj9cg.jpg" />
+          src="/images/Extras Only/19._edit_invoice_details_jvj9cg.jpg" />
           <li>Klik <strong>Tambah</strong> untuk menyertakan item baru, atau <strong>Hapus</strong> untuk menghapus item yang ada.</li>
           <Figure label=""
-          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1747107138/09._add_or_remove_mablim.jpg" />
+          src="/images/Extras Only/09._add_or_remove_mablim.jpg" />
           <li>
             Gunakan <strong>Pilih</strong> untuk memilih item dari inventaris, atau <strong>masukkan secara manual</strong> deskripsi 
             di bidang <strong>Biaya Tambahan</strong>.
           </li>
           <Figure label=""
-          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1747107140/10._click_select_vgesnw.jpg" />
+          src="/images/Extras Only/10._click_select_vgesnw.jpg" />
           <li>Pastikan <strong>Jumlah</strong>, <strong>Harga Satuan</strong>, dan <strong>Total</strong> sudah benar.</li>
           <Figure label=""
-          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1747107140/11._edit_details_tnuf95.jpg" />
+          src="/images/Extras Only/11._edit_details_tnuf95.jpg" />
           <li>Klik <strong>Perbarui Invoice</strong> untuk menyimpan perubahan.</li>
           <Figure label=""
-          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1747107147/12._click_update_invoice_l3a4ss.jpg" />
+          src="/images/Extras Only/12._click_update_invoice_l3a4ss.jpg" />
         </ol>
 
         <div className="mt-4 rounded-lg border bg-yellow-50 p-4 dark:bg-yellow-950/20">

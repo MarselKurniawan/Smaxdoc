@@ -33,14 +33,14 @@ function Page() {
         dan status kamar untuk properti Anda. Ini adalah alat utama untuk mengelola pemesanan harian dan operasional kamar.
       </p>
       <Figure label=""
-      src="https://res.cloudinary.com/dayo5hqig/image/upload/v1744167063/00._preview_eoengv.png" />
+      src="/images/Booking Chart/00._preview_eoengv.png" />
 
       {/* ==================== CREATE RESERVATION ==================== */}
       <Section id="create-reservation" title="Buat Reservasi">
       <Figure label=""
       src="https://res.cloudinary.com/dayo5hqig/image/upload/v1742532418/01._how_to_create_reservation_-_1_opclow.png" />
       <Figure label=""
-      src="https://res.cloudinary.com/dayo5hqig/image/upload/v1742532359/01._how_to_create_reservation_-_2_gahaer.png" />
+      src="/images/Booking Chart/01._how_to_create_reservation_-_2_gahaer.png" />
         <p>Berikut cara membuat reservasi baru dari Bagan Pemesanan:</p>
         <ol className="ml-6 list-decimal space-y-1">
           <li>Klik <strong>Buat Reservasi</strong> pada <strong>Header Bagan Pemesanan</strong>.</li>
@@ -62,7 +62,7 @@ function Page() {
         <Figure label=""
         src="https://res.cloudinary.com/dayo5hqig/image/upload/v1742532361/02._how_to_create_room_maintenance_-_1_w2xghb.png" />
         <Figure label=""
-        src="https://res.cloudinary.com/dayo5hqig/image/upload/v1742532363/02._how_to_create_room_maintenance_-_2_yjbvkw.png" />
+        src="/images/Booking Chart/02._how_to_create_room_maintenance_-_2_yjbvkw.png" />
         <p>Berikut cara membuat pemeliharaan kamar:</p>
         <ol className="ml-6 list-decimal space-y-1">
           <li>Klik <strong>Pemeliharaan Kamar</strong> pada <strong>Header Bagan Pemesanan</strong>.</li>
@@ -132,7 +132,7 @@ function Page() {
           <li>Klik pada <strong>reservasi</strong> yang ingin Anda edit.</li>
           <li>Klik <strong>Edit Reservasi</strong>.</li>
           <Figure label=""
-          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1742532385/04._step_1_rsclhn.png" />
+          src="/images/Booking Chart/04._step_1_rsclhn.png" />
         </ol>
 
         <h4 className="mt-4 font-medium">Langkah 2:</h4>
@@ -149,7 +149,6 @@ function Page() {
             <li>Kami menyarankan untuk <strong>tidak mengedit</strong> reservasi yang berasal dari <strong>Agen Perjalanan Online</strong>.</li>
           </ul>
         </div>
-        <Figure label="Formulir edit reservasi" />
       </Section>
 
       {/* ==================== ADD PAYMENT ==================== */}

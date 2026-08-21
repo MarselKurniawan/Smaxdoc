@@ -34,14 +34,14 @@ function Page() {
         <ol className="ml-6 list-decimal space-y-2">
           <li>Buka <strong>Sistem Back Office &gt; menu Aplikasi Akuntansi</strong>.</li>
           <Figure label=""
-          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1742528972/01._how_to_set_invoice_jurnal_id_-_1_pb1nek.png" />
+          src="/images/Accounting Apps/01._how_to_set_invoice_jurnal_id_-_1_pb1nek.png" />
           <li>Pilih <strong>Rentang Tanggal</strong> yang diinginkan. Anda dapat memfilter data berdasarkan:</li>
             <ul className="ml-6 list-disc">
               <li><strong>Tanggal Check-in</strong></li>
               <li><strong>Tanggal Check-out</strong></li>
               <li><strong>Reservasi Dibuat</strong></li>
               <Figure label=""
-              src="https://res.cloudinary.com/dayo5hqig/image/upload/v1742528973/01._how_to_set_invoice_jurnal_id_-_2_kuobh8.png" />
+              src="/images/Accounting Apps/01._how_to_set_invoice_jurnal_id_-_2_kuobh8.png" />
             </ul>
           <li>Pilih <strong>Bagan Akun</strong> yang sesuai untuk mengaitkan invoice.</li>
           <li>Klik <strong>Kirim ke Jurnal</strong> untuk melanjutkan.</li>

@@ -41,7 +41,7 @@ function Page() {
             Di kolom <strong>Kondisi Kamar</strong>, klik pada <strong>status saat ini</strong> dari kamar yang diinginkan.
           </li>
           <Figure label=""
-          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1747104558/02._room_condition_tlstum.jpg" />
+          src="/images/Housekeeping/03._room_condition_tlstum.jpg" />
           <li>
             Pilih <strong>status baru</strong> dari opsi yang tersedia (mis., <strong>Bersih</strong>, <strong>Kotor</strong>, <strong>Siap</strong>).
           </li>
@@ -63,7 +63,7 @@ function Page() {
               <strong>Aktif</strong> atau <strong>Nonaktif</strong>.
             </li>
             <Figure label=""
-            src="https://res.cloudinary.com/dayo5hqig/image/upload/v1747104558/05._enable_disable_status_hhgjdj.jpg" />
+            src="/images/Housekeeping/05._enable_disable_status_hhgjdj.jpg" />
           </ul>
         </div>
 
@@ -162,7 +162,7 @@ function Page() {
             Untuk memanfaatkan fitur ini, <strong>salin dan bagikan</strong> tautan langsung dengan staf housekeeping Anda.
           </li>
           <Figure label=""
-          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1747104558/08._direct_link_sarhq0.jpg" />
+          src="/images/Housekeeping/08._direct_link_sarhq0.jpg" />
         </ul>
 
         <div className="mt-4 rounded-lg border bg-muted/50 p-4">

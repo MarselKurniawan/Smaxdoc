@@ -159,7 +159,7 @@ function Page() {
         <ol className="ml-6 list-decimal space-y-1">
           <li>Di halaman <strong>Pengaturan</strong>, temukan bagian <strong>Tautan Langsung</strong>.</li>
           <Figure label=""
-          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1747288080/03._direct_link_-_1_izi1os.jpg" />
+          src="/images/Pengaturan/03._direct_link_-_1_izi1os.jpg" />
           <li>Klik <strong>Hasilkan Tautan Baru</strong> untuk membuat tautan akses baru.</li>
           <li>
             Pop-up konfirmasi akan muncul dengan pesan:
@@ -167,10 +167,10 @@ function Page() {
           </li>
           <li>Klik <strong>OK</strong> untuk melanjutkan.</li>
           <Figure label=""
-          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1747288080/03._direct_link_-_2_wdy9gs.jpg" />
+          src="/images/Pengaturan/03._direct_link_-_2_wdy9gs.jpg" />
           <li>Sistem akan menghasilkan satu set tautan baru.</li>
           <Figure label=""
-          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1747288080/03._direct_link_-_3_t4rmjq.jpg" />
+          src="/images/Pengaturan/03._direct_link_-_3_t4rmjq.jpg" />
         </ol>
 
         <div className="mt-4 rounded-lg border bg-yellow-50 p-4 dark:bg-yellow-950/20">
@@ -667,7 +667,7 @@ function Page() {
         <ol className="ml-6 list-decimal space-y-1">
           <li>Pilih <strong>Pengaturan</strong> dari menu <strong>Front Office</strong>, dan buka bagian <strong>Periode Sarapan</strong>.</li>
           <Figure label=""
-          src="http://res.cloudinary.com/dayo5hqig/image/upload/v1771484927/breakfast-period-setting.png" />
+          src="/images/Pengaturan/breakfast-period-setting.png" />
           <li>Tinjau konfigurasi yang ada dan pastikan periode saat ini sesuai dengan kebutuhan operasional Anda.</li>
           <li>
             Jika pembaruan diperlukan, sesuaikan <strong>rentang tanggal pelaporan</strong> untuk menentukan periode yang digunakan untuk pengumpulan dan pelaporan data sarapan.
@@ -681,7 +681,7 @@ function Page() {
                 <strong>Buat:</strong> Tambahkan periode baru dengan memasukkan <strong>tahun</strong>, <strong>tanggal mulai</strong>, dan <strong>tanggal akhir</strong>.
               </li>
               <Figure label=""
-              src="https://res.cloudinary.com/dayo5hqig/image/upload/v1771485623/create-new-period.png" />
+              src="/images/Pengaturan/create-new-period.png" />
               <li>
                 <strong>Edit:</strong> Perbarui <strong>tahun</strong>, <strong>tanggal mulai</strong>, atau <strong>tanggal akhir</strong> dari periode yang ada.
               </li>
@@ -696,11 +696,11 @@ function Page() {
         <ul className="ml-6 list-disc space-y-1">
           <li>Buka <strong>Laporan</strong> dari menu <strong>Front Office</strong> dan buka <strong>Laporan Sarapan</strong>.</li>
           <Figure label=""
-          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1771486011/verify-date-range.png" />
+          src="/images/Pengaturan/verify-date-range.png" />
           <li>Konfirmasikan bahwa <strong>rentang tanggal</strong> yang dikonfigurasi (mis., Oktober–Desember) ditampilkan dengan benar.</li>
           <li>Nilai sarapan akan muncul <strong>hanya untuk periode yang dikonfigurasi</strong>; jika tidak, laporan akan menampilkan <strong>0</strong>.</li>
           <Figure label=""
-          src="https://res.cloudinary.com/dayo5hqig/image/upload/v1771485488/breakfast-period-result_aev6eq.png" />
+          src="/images/Pengaturan/breakfast-period-result_aev6eq.png" />
         </ul>
 
         <div className="mt-4 rounded-lg border bg-muted/50 p-4">
